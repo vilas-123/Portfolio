@@ -79,11 +79,11 @@ const Navbar = () => {
           <Logo> PORTFOLIO</Logo>
         </Left>
         <Right>
-          <MenuItem> ABOUT </MenuItem>
-          <MenuItem> SKILLS </MenuItem>
-          <MenuItem> PROJECTS </MenuItem>
-          <MenuItem> CONTACT </MenuItem>
-          <SearchContainer> RESUME</SearchContainer>
+          <a href='#about' style={{ textDecoration: "none", color: "whiteSmoke" }}><MenuItem> ABOUT </MenuItem></a>
+          <a href='#skills' style={{ textDecoration: "none", color: "whiteSmoke" }}><MenuItem> SKILLS </MenuItem></a>
+          <a href='#projects' style={{ textDecoration: "none", color: "whiteSmoke" }}><MenuItem> PROJECTS </MenuItem></a>
+          <a href='#contact' style={{ textDecoration: "none", color: "whiteSmoke" }}><MenuItem> CONTACT </MenuItem></a>
+          <a href='' style={{ textDecoration: "none", color: "whiteSmoke" }}><SearchContainer> RESUME</SearchContainer></a>
         </Right>
       </Wrapper>
     </Container>

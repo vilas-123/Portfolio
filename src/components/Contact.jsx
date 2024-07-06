@@ -29,7 +29,7 @@ const TextSectionHeading = styled.div`
     font-size: 40px;
     font-weight: bold;
     color: rgb(100, 255, 218);
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     text-align: center;
 `
 
@@ -60,8 +60,11 @@ const Contact = () => {
         <Wrapper>
             <Container>
                 <Content>
-                    <TextSection>
+                    <TextSection id='contact'>
                         <TextSectionHeading> Get in Touch</TextSectionHeading>
+                        <TextSectionPara>Mail me at: sahujayant046@gmail.com</TextSectionPara>
+
+                        <TextSectionPara> GitHub repositories: <a href='https://github.com/jayant0146' style={{ textDecoration: "none", color: "rgb(100, 255, 218)" }}>https://github.com/jayant0146</a></TextSectionPara>
                         <TextSectionPara>My inbox is always open. Whether you have a question or just want to say hello, I'll try my best to get back to you! Feel free to mail me about any relevant job updates.</TextSectionPara>
 
                         <SearchWrap>
@@ -71,7 +74,7 @@ const Contact = () => {
                     </TextSection>
                 </Content>
             </Container>
-        </Wrapper>
+        </Wrapper >
     )
 }
 

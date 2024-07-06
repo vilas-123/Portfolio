@@ -66,38 +66,43 @@ const About = () => {
             <Container>
                 <Content>
                     <TextSection>
-                        <TextSectionHeading> About Me</TextSectionHeading>
+                        <TextSectionHeading id="about"> About Me</TextSectionHeading>
 
-                        <TextSectionPara>Hello! Interestingly, I have been a student of Maths in my high school and got introduced to programming in my freshman year at
-                            <Link to="https://iitjammu.ac.in/" style={{ color: "rgb(100, 255, 218)", textDecoration: "none" }} > Indian Institute of Technology, Jammu </Link>.
-                            My interest in coding started back in 2020 during the first year of B.tech. Since then, I started learning programming languages & solving problems based on data structure and algorithms. Most importantly I'm a
-                            <Link to="https://leetcode.com/u/sahujayant046/" style={{ color: "rgb(100, 255, 218)", textDecoration: "none" }}>  Problem Solver</Link>.
+                        <TextSectionPara>Hello! My journey began as a high school student with a keen interest in Mathematics. I was introduced to programming during my freshman year at the  <Link to="https://iitjammu.ac.in/" style={{ color: "rgb(100, 255, 218)", textDecoration: "none" }} > Indian Institute of Technology, Jammu</Link>. My passion for coding ignited in 2020, during my first year of B.Tech. Since then, I have immersed myself in learning various programming languages and honing my skills in solving complex problems using data structures and algorithms. Above all, I pride myself, being a dedicated <Link to="https://leetcode.com/u/sahujayant046/" style={{ color: "rgb(100, 255, 218)", textDecoration: "none" }}> Problem Solver. </Link>
                         </TextSectionPara>
+
+
 
                         <TextSectionPara> I've pursued my Bachelors in Electrical Engineering (2020-2024) with
-                            <Link to="https://www.linkedin.com/in/jayant-sahu-48a426200/" style={{ color: "rgb(100, 255, 218)", textDecoration: "none" }} >  8.41 CGPA aggregate</Link>.
+                            <Link to="https://drive.google.com/file/d/1S9H4Wm1N2EV4kFDEiFBStSR2mbPetx9c/view?usp=drive_link" style={{ color: "rgb(100, 255, 218)", textDecoration: "none" }} >  8.41 CGPA aggregate</Link>.
                         </TextSectionPara>
 
-                        <TextSectionPara>Also I've knowledge of Web Development and created some projects on that using HTML, CSS, Javascript / React.js / Node.js, MongoDB and some other cool libraries and frameworks. </TextSectionPara>
+                        <TextSectionPara>Also I've knowledge of Machine Learning and Web Development created some projects on that using HTML, CSS, Javascript / React.js / Node.js, MongoDB and some other cool libraries and frameworks. </TextSectionPara>
 
-                        <TextSectionPara>Here is a list of the technologies that I've worked with.</TextSectionPara>
+                        <TextSectionPara id="skills">Here is a list of the technologies that I've worked with.</TextSectionPara>
 
                         <Technologies>
                             <TechnologiesList>C || C++</TechnologiesList>
+                            <TechnologiesList>Python</TechnologiesList>
+                            <TechnologiesList>SQL</TechnologiesList>
+                            <TechnologiesList>JavaScript</TechnologiesList>
+                            <TechnologiesList>ReactJS || NodeJS || ExpressJS</TechnologiesList>
                             <TechnologiesList>Algorithms</TechnologiesList>
                             <TechnologiesList>Bootstrap</TechnologiesList>
-                            <TechnologiesList>ReactJS || NodeJS || ExpressJS</TechnologiesList>
-                            <TechnologiesList>MongoDB || Heroku</TechnologiesList>
+                            <TechnologiesList>Material UI</TechnologiesList>
+                            <TechnologiesList>MongoDB</TechnologiesList>
                             <TechnologiesList>Data Structures</TechnologiesList>
-                            <TechnologiesList>HTML || CSS</TechnologiesList>
-                            <TechnologiesList>Javascript || JQuery</TechnologiesList>
                             <TechnologiesList>Git || Github</TechnologiesList>
-                            <TechnologiesList>Firebase</TechnologiesList>
+                            <TechnologiesList>Linux</TechnologiesList>
+                            <TechnologiesList>OOPs</TechnologiesList>
+                            <TechnologiesList>DBMS</TechnologiesList>
+                            <TechnologiesList>OS</TechnologiesList>
+                            <TechnologiesList>ML Libraries</TechnologiesList>
                         </Technologies>
                     </TextSection>
 
                     <ImageSection>
-                        <img src="/Profile2.jpeg" alt="Profile" style={{ maxWidth: "100%", borderRadius: "10px", border: "1px solid #6c63ff" }} />
+                        <img src={require("../Profile2.jpeg")} alt="Profile" style={{ maxWidth: "100%", borderRadius: "10px", border: "1px solid #6c63ff" }} />
                     </ImageSection>
                 </Content>
             </Container>
