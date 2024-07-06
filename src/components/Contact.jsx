@@ -1,18 +1,17 @@
 import React from 'react'
 import { styled } from 'styled-components'
-import { Link } from 'react-router-dom';
 
 const Wrapper = styled.div`
   padding: 5% 10%;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0px 8px 6px -6px gray;
+  box-shadow: 0rem .8rem .6rem -0.6rem gray;
 `;
 
 const Container = styled.div`
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
-    padding: 20px;
+    padding: 2rem;
 `
 
 const Content = styled.div`
@@ -22,36 +21,37 @@ const Content = styled.div`
 `
 
 const TextSection = styled.div`
-    padding: 0px 20%;
+    padding: 0rem 20%;
 `
 
 const TextSectionHeading = styled.div`
-    font-size: 40px;
+    font-size: 4rem;
     font-weight: bold;
     color: rgb(100, 255, 218);
-    padding-bottom: 20px;
+    padding-bottom: 2rem;
     text-align: center;
 `
 
 const TextSectionPara = styled.div`
     line-height: 1.6;
-    font-size: 18px;
+    font-size: 1.8rem;
     color: rgb(136, 146, 176);
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     text-align: center;
 `
 
 const SearchWrap = styled.div`
-    padding: 10px 39%;
+    padding: 0.8rem 35%;
+    text-align: center;
 `
 
 const SearchContainer = styled.div`
-  border: 0.5px solid rgb(100, 255, 218);
-  font-size: 17px;
+  border: 0.05rem solid rgb(100, 255, 218);
+  font-size: 1.7rem;
   color: rgb(100, 255, 218);
   align-items: center;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 2rem;
+  border-radius: 1rem;
   cursor: pointer;
 `;
 
@@ -74,7 +74,7 @@ const Contact = () => {
                     </TextSection>
                 </Content>
             </Container>
-        </Wrapper >
+        </Wrapper>
     )
 }
 

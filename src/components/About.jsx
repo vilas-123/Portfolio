@@ -9,9 +9,9 @@ const Wrapper = styled.div`
 `;
 
 const Container = styled.div`
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
-    padding: 20px;
+    padding: 2rem;
 `
 
 const Content = styled.div`
@@ -25,17 +25,17 @@ const TextSection = styled.div`
 `
 
 const TextSectionHeading = styled.div`
-    font-size: 30px;
+    font-size: 3rem;
     color: aliceblue;
     font-weight: bold;
-    padding-bottom: 40px;
+    padding-bottom: 4rem;
 `
 
 const TextSectionPara = styled.div`
     line-height: 1.6;
-    font-size: 18px;
+    font-size: 1.8rem;
     color: rgb(136, 146, 176);
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 `
 
 const Technologies = styled.div`
@@ -46,13 +46,13 @@ const Technologies = styled.div`
 `
 
 const TechnologiesList = styled.div`
-    margin-right: 15px;
-    margin-bottom: 10px;
-    font-size: 15px;
+    margin-right: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
     color: rgb(100, 255, 218);
     background-color: #1b263b;
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
 `
 const ImageSection = styled.div`
     max-width: 35%;
@@ -102,7 +102,7 @@ const About = () => {
                     </TextSection>
 
                     <ImageSection>
-                        <img src={require("../Profile2.jpeg")} alt="Profile" style={{ maxWidth: "100%", borderRadius: "10px", border: "1px solid #6c63ff" }} />
+                        <img src={require("../images/Profile2.jpeg")} alt="Profile" style={{ maxWidth: "100%", borderRadius: "1rem", border: ".1rem solid #6c63ff" }} />
                     </ImageSection>
                 </Content>
             </Container>

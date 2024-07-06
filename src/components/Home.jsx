@@ -9,29 +9,30 @@ const Wrapper = styled.div`
 `;
 
 const Texting = styled.div`
-    font-size: 17px;
+    font-size: 1.7rem;
     color: rgb(136, 146, 176);
     padding-right: 50%;
-    padding-bottom: 10px;
+    padding-bottom: 1rem;
 `
 
 const Emphasize = styled.div`
     color: rgb(204, 214, 246);
-    font-size: 70px;
+    font-size: 7rem;
     font-weight: bold;
 `
 
 const SearchWrap = styled.div`
-    padding-right: 88%;
+    padding-right: 85%;
+    text-align: center;
 `
 
 const SearchContainer = styled.div`
-  border: 0.5px solid rgb(100, 255, 218);
-  font-size: 17px;
+  border: 0.05rem solid rgb(100, 255, 218);
+  font-size: 1.7rem;
   color: rgb(100, 255, 218);
   align-items: center;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 2rem;
+  border-radius: 1rem;
   cursor: pointer;
 `;
 
