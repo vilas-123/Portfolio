@@ -1,6 +1,6 @@
 import React from 'react'
 import { styled } from 'styled-components'
-import Navbar from './Navbar';
+import Navbar2 from './Navbar2';
 
 const Wrapper = styled.div`
   padding: 5% 10%; 
@@ -17,17 +17,6 @@ const Container = styled.div`
 const Content = styled.div`
     justify-content: space-between;
     align-items: flex-start;
-`
-
-const TextSection = styled.div`
-    max-width: 100%;
-`
-
-const TextSectionHeading = styled.div`
-    font-size: 3rem;
-    color: aliceblue;
-    font-weight: bold;
-    padding-bottom: 4rem;
 `
 
 const TextSectionPara = styled.div`
@@ -54,6 +43,18 @@ const ProjectImage = styled.div`
     flex: 1;
     max-width: 50%;
     position: relative;
+    transition: all 0.5s ease;
+    opacity: 0.9;
+    &:hover {
+        background-color: #e9f5f5;
+        transform: scale(1.1);
+        opacity: 1;
+    }
+`
+const Emphasize = styled.div`
+    color: rgb(100, 255, 218);
+    font-size: 4rem;
+    font-weight: bold;
 `
 
 const ProjectDetails = styled.div`
@@ -84,10 +85,36 @@ const TechnologiesList = styled.div`
 `
 const ArchiveProjects = () => {
     return (<>
-        <Navbar />
+        <Navbar2 />
         <Wrapper>
+            <Emphasize> Other Noteworthy Projects</Emphasize>
             <Container>
                 <Content>
+
+                    <ProjectCard>
+                        <ProjectImage>
+                            <a href='https://github.com/jayant0146/Autobot-Tryst-Challenge'> <img src={require('../images/autobot.png')} alt="Autobot Code Screenshot" style={{ height: "30rem", width: "50rem" }} /> </a>
+                        </ProjectImage>
+                        <ProjectDetails style={{ textAlign: "right" }}>
+
+                            <h2 style={{ fontSize: "2.2rem", color: "rgb(237, 135, 33)" }}>Tryst AutoBot</h2>
+                            <TextSectionPara> Autobot detected the object's path accurately from the lane video on the pathway and also defined the function for the interested
+                                regions and the edged lines.
+                                Trained the model for various objects like animals, persons, cones, Traffic Lights, and Stops or any other obstacles in the path
+                            </TextSectionPara>
+                            <Technologies>
+                                <TechnologiesList>Machine Learning</TechnologiesList>
+                                <TechnologiesList>OpenCv</TechnologiesList>
+                                <TechnologiesList>Numpy</TechnologiesList>
+                                <TechnologiesList>Matplotlib</TechnologiesList>
+                                <TechnologiesList>Training & Testing Model</TechnologiesList>
+                                <TechnologiesList>Keras</TechnologiesList>
+                                <TechnologiesList>Tensorflow</TechnologiesList>
+                            </Technologies>
+                        </ProjectDetails>
+                    </ProjectCard>
+
+
                     <ProjectCard>
                         <ProjectImage>
                             <a href='https://drive.google.com/file/d/1wSlchZsVqHYHrQA5etC4bS31KNwZYBHP/view?usp=drive_link'> <img src={require('../images/smartroom.png')} alt="Smart Room  Screenshot" style={{ height: "30rem", width: "50rem" }} /> </a>
@@ -131,7 +158,7 @@ const ArchiveProjects = () => {
 
                     <ProjectCard>
                         <ProjectImage>
-                            <a href='https://github.com/jayant0146/Quiz-App-Using-React'> <img src={require('../images/Portfolio.png')} alt="Quiz App  Screenshot" style={{ height: "30rem", width: "50rem" }} /> </a>
+                            <a href='https://github.com/jayant0146/Quiz-App-Using-React'> <img src={require('../images/quiz.png')} alt="Quiz App  Screenshot" style={{ height: "30rem", width: "50rem" }} /> </a>
                         </ProjectImage>
                         <ProjectDetails style={{ textAlign: "right" }}>
 
@@ -148,7 +175,7 @@ const ArchiveProjects = () => {
 
                     <ProjectCard>
                         <ProjectImage>
-                            <a href='https://github.com/jayant0146/Resume-Templates'> <img src={require('../images/Portfolio.png')} alt="Resume Template Screenshot" style={{ height: "30rem", width: "50rem" }} /> </a>
+                            <a href='https://github.com/jayant0146/Resume-Templates'> <img src={require('../images/resume.png')} alt="Resume Template Screenshot" style={{ height: "30rem", width: "50rem" }} /> </a>
                         </ProjectImage>
                         <ProjectDetails style={{ textAlign: "right" }}>
 

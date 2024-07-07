@@ -1,7 +1,6 @@
 import React from 'react'
 import { styled } from 'styled-components'
 import { Link } from 'react-router-dom';
-import ArchiveProjects from './ArchiveProjects';
 
 const Wrapper = styled.div`
   padding: 5% 10%; 
@@ -18,10 +17,6 @@ const Container = styled.div`
 const Content = styled.div`
     justify-content: space-between;
     align-items: flex-start;
-`
-
-const TextSection = styled.div`
-    max-width: 100%;
 `
 
 const TextSectionHeading = styled.div`
@@ -55,6 +50,13 @@ const ProjectImage = styled.div`
     flex: 1;
     max-width: 50%;
     position: relative;
+    transition: all 0.5s ease;
+    opacity: 0.9;
+    &:hover {
+        background-color: #e9f5f5;
+        transform: scale(1.1);
+        opacity: 1;
+    }
 `
 
 const ProjectDetails = styled.div`
@@ -161,7 +163,7 @@ const Projects = () => {
                         <h2 style={{ fontSize: "2.2rem" }}>
                             Other Considerable projects ----
                             <span >
-                                <Link to={'/archiveProjects'} style={{ textDecoration: "none", color: "rgb(100, 255, 218)", fontWeight: "lighter" }}>
+                                <Link to={'/archiveProjects'} style={{ textDecoration: "none", color: "rgb(100, 255, 218)", fontSize: "2.2 rem", paddingLeft: ".8rem", fontWeight: "lighter" }}>
                                     View the entire list of projects
                                 </Link>
                             </span>

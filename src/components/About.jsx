@@ -58,6 +58,14 @@ const ImageSection = styled.div`
     max-width: 35%;
     text-align: center;
     position: relative;
+    transition: all 0.5s ease;
+    opacity: 0.9;
+    &:hover {
+        background-color: #e9f5f5;
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    
 `
 
 const About = () => {
@@ -98,6 +106,8 @@ const About = () => {
                             <TechnologiesList>DBMS</TechnologiesList>
                             <TechnologiesList>OS</TechnologiesList>
                             <TechnologiesList>ML Libraries</TechnologiesList>
+                            <TechnologiesList>Numpy || Pandas || Matplotlib</TechnologiesList>
+                            <TechnologiesList>MATLAB</TechnologiesList>
                         </Technologies>
                     </TextSection>
 
