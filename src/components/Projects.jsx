@@ -97,10 +97,11 @@ const Projects = () => {
           <br />
           <ProjectCard>
             <ProjectImage>
-              <a href="https://github.com/vilas-123/Amazon"
-              target="_blank"
-              rel="noopener noreferrer">
-              
+              <a
+                href="https://github.com/vilas-123/Amazon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {" "}
                 <img
                   src={require("../images/Shopping.png")}
@@ -144,9 +145,11 @@ const Projects = () => {
 
           <ProjectCard>
             <ProjectImage>
-              <a href="https://github.com/vilas-123/Admission-Prediction"
+              <a
+                href="https://github.com/vilas-123/Admission-Prediction"
                 target="_blank"
-                rel="noopener noreferrer">
+                rel="noopener noreferrer"
+              >
                 <img
                   src={require("../images/Website.png")}
                   alt="Hydroponics Website Screenshot"
@@ -193,9 +196,11 @@ const Projects = () => {
 
           <ProjectCard>
             <ProjectImage>
-              <a href="https://github.com/vilas-123/Automatic-Restaurant-Generator-Using-Langchain"
+              <a
+                href="https://github.com/vilas-123/Automatic-Restaurant-Generator-Using-Langchain"
                 target="_blank"
-                rel="noopener noreferrer">
+                rel="noopener noreferrer"
+              >
                 {" "}
                 <img
                   src={require("../images/CatsDogs.png")}
@@ -231,6 +236,54 @@ const Projects = () => {
                 <TechnologiesList>Langchain</TechnologiesList>
                 <TechnologiesList>OpenAI embeddings</TechnologiesList>
                 <TechnologiesList>Streamlit</TechnologiesList>
+              </Technologies>
+            </ProjectDetails>
+          </ProjectCard>
+
+          <ProjectCard>
+            <ProjectImage>
+              <a
+                href="https://github.com/vilas-123/Spotify-Clone1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                <img
+                  src={require("../images/spotify.jpeg")}
+                  alt="Training Dataset"
+                  style={{ height: "30rem", width: "50rem" }}
+                />{" "}
+              </a>
+            </ProjectImage>
+            <ProjectDetails style={{ textAlign: "right" }}>
+              <h3
+                style={{
+                  color: "rgb(100, 255, 218)",
+                  fontSize: "1.6rem",
+                  fontWeight: "lighter",
+                }}
+              >
+                Featured Project
+              </h3>
+              <h2 style={{ fontSize: "2.2rem", color: "rgb(237, 135, 33)" }}>
+                Spotify Clone
+              </h2>
+              <TextSectionPara>
+                Play/Pause: Allows the user to start or pause the playback of
+                the currently selected track. 
+                Next/Previous: Enables the user to
+                skip to the next or previous track in the playlist or album.
+                Seek: Allows the user to manually move forward or backward
+                within a track by dragging a slider or clicking on a progress
+                bar. Display the currently playing song and album artwork.
+              </TextSectionPara>
+
+              <Technologies>
+                <TechnologiesList>JavaScript</TechnologiesList>
+                <TechnologiesList>Bootstrap</TechnologiesList>
+                <TechnologiesList>MATERIAL UI</TechnologiesList>
+                <TechnologiesList>HTML </TechnologiesList>
+                <TechnologiesList>CSS</TechnologiesList>
               </Technologies>
             </ProjectDetails>
           </ProjectCard>
