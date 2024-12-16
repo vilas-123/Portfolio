@@ -85,21 +85,17 @@ const About = () => {
                 target="_blank"
               >
                 {" "}
-                IIIT Bengaluru{" "}
+                Visvesvaraya Technological University{" "}
               </Link>
               . My passion for coding ignited in 2020, during my first year of
               B.Tech. Since then, I have immersed myself in learning various
               programming languages and honing my skills in solving complex
               problems using data structures and algorithms. Above all, I pride
               myself, being a dedicated{" "}
-              <Link
-                to="https://leetcode.com/u/vilas-123/"
-                style={{ color: "rgb(100, 255, 218)", textDecoration: "none" }}
-                target="_blank"
-              >
+             
                 {" "}
                 Problem Solver.{" "}
-              </Link>
+              
             </TextSectionPara>
 
             <TextSectionPara>
