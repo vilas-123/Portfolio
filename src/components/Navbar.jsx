@@ -62,7 +62,7 @@ const Navbar = () => {
           <a href='#skills' style={{ textDecoration: "none", color: "whiteSmoke" }}><MenuItem> SKILLS </MenuItem></a>
           <a href='#projects' style={{ textDecoration: "none", color: "whiteSmoke" }}><MenuItem> PROJECTS </MenuItem></a>
           <a href='#contact' style={{ textDecoration: "none", color: "whiteSmoke" }}><MenuItem> CONTACT </MenuItem></a>
-          <a href='https://drive.google.com/drive/folders/1ojNMiDTm37Ve9bZw6pf__cEU1CzoZ1on?usp=drive_link' style={{ textDecoration: "none", color: "whiteSmoke" }}><SearchContainer> RESUME</SearchContainer></a>
+          <a href='https://drive.google.com/file/d/1qvST6KTpU7cmBtqzB7PiLRg6-7K0A850/view?usp=drive_link' style={{ textDecoration: "none", color: "whiteSmoke" }}><SearchContainer> RESUME</SearchContainer></a>
         </Right>
       </Wrapper>
     </Container>

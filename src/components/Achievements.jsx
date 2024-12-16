@@ -44,10 +44,10 @@ const Achievements = () => {
                     <TextSection>
                         <TextSectionHeading id="about"> Achievements</TextSectionHeading>
 
-                        <TextSectionPara> Earned Academic Excellence Certificate with highest CGPA consistently over past 4 semesters.</TextSectionPara>
-                        <TextSectionPara>Achieved a finalist position in IIT Roorkee’s E-Summit Ideastorm, collaborating with a team of 5 members.</TextSectionPara>
+                        <TextSectionPara>Earned Gold Google Badge for Excellence in NLP,LLMs  .</TextSectionPara>
+                        <TextSectionPara>Earned Cisco CCNA Security under lecturer Matt Constable (2023)</TextSectionPara>
                         <TextSectionPara>Received Excellence Certificate in Cognitive Applications (ML) Workshop, surpasssing 500 participants.</TextSectionPara>
-                        <TextSectionPara>Accomplished a Contest Rating of 1650+ on Leetcode, showcasing problem-solving skills.</TextSectionPara>
+                        <TextSectionPara>Winner of IEEE project Symposium Prakalp 2024 ,Credientials:STB99412</TextSectionPara>
                     </TextSection>
                 </Content>
             </Container>
