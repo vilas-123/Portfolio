@@ -6,12 +6,20 @@ const Wrapper = styled.div`
   padding: 5% 10%;
   align-items: center;
   justify-content: space-between;
+  
+  @media (max-width: 768px) {
+    padding: 5% 5%;
+  }
 `;
 
 const Container = styled.div`
   max-width: 120rem;
   margin: 0 auto;
   padding: 2rem;
+  
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
 `;
 
 const Content = styled.div`
@@ -24,6 +32,11 @@ const TextSectionHeading = styled.div`
   color: aliceblue;
   font-weight: bold;
   padding-bottom: 4rem;
+  
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+  }
 `;
 
 const TextSectionPara = styled.div`
@@ -33,6 +46,12 @@ const TextSectionPara = styled.div`
   margin: 2rem 0rem;
   padding: 2rem;
   border: 0.1rem solid gray;
+  
+  @media (max-width: 768px) {
+    font-size: 1.4rem;
+    margin: 1rem 0;
+    padding: 1.5rem;
+  }
 `;
 
 const ProjectCard = styled.div`
@@ -44,6 +63,11 @@ const ProjectCard = styled.div`
   position: relative;
   overflow: hidden;
   padding-bottom: 9rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding-bottom: 4rem;
+  }
 `;
 
 const ProjectImage = styled.div`
@@ -52,6 +76,22 @@ const ProjectImage = styled.div`
   position: relative;
   transition: all 0.5s ease;
   opacity: 0.9;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  img {
+    width: 50rem;
+    height: 30rem;
+    
+    @media (max-width: 768px) {
+      width: 100%;
+      height: auto;
+    }
+  }
+
   &:hover {
     background-color: #e9f5f5;
     transform: scale(1.1);
@@ -66,6 +106,20 @@ const ProjectDetails = styled.div`
   padding: 2rem;
   position: relative;
   border-radius: 0 1rem 1rem 0;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    padding: 1rem;
+    text-align: left !important;
+
+    h2 {
+      font-size: 1.8rem !important;
+    }
+
+    h3 {
+      font-size: 1.4rem !important;
+    }
+  }
 `;
 
 const Technologies = styled.div`
@@ -74,6 +128,10 @@ const Technologies = styled.div`
   list-style-type: none;
   padding-right: 0rem;
   align-items: flex-end;
+
+  @media (max-width: 768px) {
+    justify-content: flex-start;
+  }
 `;
 
 const TechnologiesList = styled.div`
@@ -84,6 +142,40 @@ const TechnologiesList = styled.div`
   background-color: #1b263b;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.3rem;
+    margin-right: 1rem;
+    margin-bottom: 0.8rem;
+  }
+`;
+
+const ProjectLink = styled.a`
+  width: 100%;
+  display: block;
+  
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 50rem;
+    max-height: 30rem;
+    object-fit: cover;
+  }
+`;
+
+const ArchiveLink = styled(Link)`
+  text-decoration: none;
+  color: rgb(100, 255, 218);
+  font-size: 2.2rem;
+  padding-left: .8rem;
+  font-weight: lighter;
+
+  @media (max-width: 768px) {
+    font-size: 1.8rem;
+    display: block;
+    padding-left: 0;
+    margin-top: 1rem;
+  }
 `;
 
 const Projects = () => {

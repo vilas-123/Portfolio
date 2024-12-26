@@ -6,12 +6,20 @@ const Wrapper = styled.div`
   padding: 5% 10%;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    padding: 5% 5%;
+  }
 `;
 
 const Container = styled.div`
   max-width: 120rem;
   margin: 0 auto;
   padding: 2rem;
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
 `;
 
 const Content = styled.div`
@@ -26,6 +34,12 @@ const TextSectionPara = styled.div`
   margin: 2rem 0rem;
   padding: 2rem;
   border: 0.1rem solid gray;
+
+  @media (max-width: 768px) {
+    font-size: 1.4rem;
+    margin: 1rem 0;
+    padding: 1.5rem;
+  }
 `;
 
 const ProjectCard = styled.div`
@@ -37,6 +51,11 @@ const ProjectCard = styled.div`
   position: relative;
   overflow: hidden;
   padding-bottom: 9rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding-bottom: 4rem;
+  }
 `;
 
 const ProjectImage = styled.div`
@@ -45,16 +64,43 @@ const ProjectImage = styled.div`
   position: relative;
   transition: all 0.5s ease;
   opacity: 0.9;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  img {
+    width: 50rem;
+    height: 30rem;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      height: auto;
+    }
+  }
+
   &:hover {
     background-color: #e9f5f5;
     transform: scale(1.1);
     opacity: 1;
+
+    @media (max-width: 768px) {
+      transform: scale(1.05);
+    }
   }
 `;
+
 const Emphasize = styled.div`
   color: rgb(100, 255, 218);
   font-size: 4rem;
   font-weight: bold;
+
+  @media (max-width: 768px) {
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
 `;
 
 const ProjectDetails = styled.div`
@@ -64,6 +110,16 @@ const ProjectDetails = styled.div`
   padding: 2rem;
   position: relative;
   border-radius: 0 1rem 1rem 0;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    padding: 1rem;
+    text-align: left !important;
+
+    h2 {
+      font-size: 1.8rem !important;
+    }
+  }
 `;
 
 const Technologies = styled.div`
@@ -72,6 +128,10 @@ const Technologies = styled.div`
   list-style-type: none;
   padding-right: 0rem;
   align-items: flex-end;
+
+  @media (max-width: 768px) {
+    justify-content: flex-start;
+  }
 `;
 
 const TechnologiesList = styled.div`
@@ -82,6 +142,26 @@ const TechnologiesList = styled.div`
   background-color: #1b263b;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.3rem;
+    margin-right: 1rem;
+    margin-bottom: 0.8rem;
+  }
+`;
+
+const ProjectLink = styled.a`
+  width: 100%;
+  display: block;
+  
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 50rem;
+    max-height: 30rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
 `;
 const ArchiveProjects = () => {
   return (
@@ -93,7 +173,9 @@ const ArchiveProjects = () => {
           <Content>
             <ProjectCard>
               <ProjectImage>
-                <a href="https://github.com/vilas-123/Rag-Application-Chatbot-">
+                <a href="https://github.com/vilas-123/Rag-Application-Chatbot-"
+                      target="_blank" 
+                      rel="noopener noreferrer">
                   {" "}
                   <img
                     src={require("../images/autobot.png")}
@@ -127,7 +209,9 @@ const ArchiveProjects = () => {
 
             <ProjectCard>
               <ProjectImage>
-                <a href="https://github.com/jayant0146/Portfolio-2.0">
+                <a href="https://github.com/jayant0146/Portfolio-2.0"
+                      target="_blank" 
+                      rel="noopener noreferrer">
                   {" "}
                   <img
                     src={require("../images/Portfolio.png")}
@@ -161,7 +245,9 @@ const ArchiveProjects = () => {
 
             <ProjectCard>
               <ProjectImage>
-                <a href="https://github.com/vilas-123/Online-Quiz-React">
+                <a href="https://github.com/vilas-123/Online-Quiz-React"
+                      target="_blank" 
+                      rel="noopener noreferrer">
                   {" "}
                   <img
                     src={require("../images/quiz.png")}
@@ -192,7 +278,9 @@ const ArchiveProjects = () => {
 
             <ProjectCard>
               <ProjectImage>
-                <a href="https://github.com/vilas-123/Resume-Templates">
+                <a href="https://github.com/vilas-123/Resume-Templates"
+                      target="_blank" 
+                      rel="noopener noreferrer">
                   {" "}
                   <img
                     src={require("../images/resume.png")}
@@ -225,16 +313,19 @@ const ArchiveProjects = () => {
             </ProjectCard>
 
             <ProjectCard>
-              <ProjectImage>
-                <a href="https://to-do-app-ten-lake.vercel.app/ ">
-                  {" "}
-                  <img
-                    src={require("../images/todoapp.png")}
-                    alt="To Do App Screenshot"
-                    style={{ height: "30rem", width: "50rem" }}
-                  />{" "}
-                </a>
-              </ProjectImage>
+            <ProjectImage>
+    <a 
+      href="https://to-do-app-ten-lake.vercel.app/" 
+      target="_blank" 
+      rel="noopener noreferrer"
+    >
+      <img
+        src={require("../images/todoapp.png")}
+        alt="To Do App Screenshot"
+        style={{ height: "30rem", width: "50rem" }}
+      />
+    </a>
+  </ProjectImage>
               <ProjectDetails style={{ textAlign: "right" }}>
                 <h2 style={{ fontSize: "2.2rem", color: "rgb(237, 135, 33)" }}>
                   To Do App
