@@ -209,7 +209,9 @@ const ArchiveProjects = () => {
 
             <ProjectCard>
               <ProjectImage>
-                <a href="https://github.com/vilas-123/Portfolio">
+                <a href="https://github.com/vilas-123/Portfolio"
+                                      target="_blank" 
+                                      rel="noopener noreferrer">
                   {" "}
                   <img
                     src={require("../images/Portfolio.png")}
