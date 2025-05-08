@@ -108,7 +108,7 @@ const About = () => {
               I've pursued my Bachelors in Computer Science Engineering
               (2020-2024) with&nbsp;
               <a
-                href="https://drive.google.com/file/d/1m_2LDyGIBJ2V2pKCp-2aouZfhrphxexZ/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1m_2LDyGIBJ2V2pKCp-2aouZfhrphxexZ/view?usp=sharing"
                 style={{ color: "rgb(100, 255, 218)", textDecoration: "none" }}
                 target="_blank"
                 rel="noopener noreferrer"
