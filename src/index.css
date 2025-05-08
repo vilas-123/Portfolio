@@ -31,4 +31,17 @@ body {
   html {
     font-size: 45%;
   }
+
+  @media (max-width: 576px) {
+    html {
+      font-size: 40%;
+    }
+  
+    .container, .section, .card, etc {
+      padding: 1rem;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
 }
