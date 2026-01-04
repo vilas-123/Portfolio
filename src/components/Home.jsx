@@ -42,7 +42,7 @@ const Home = () => {
             <Texting style={{ color: "rgb(100, 255, 218)" }}>Hello World! I am <br /></Texting>
             <Emphasize style={{ color: "aliceblue" }}>Vilas Harapanahalli</Emphasize>
             <Emphasize>  Enthusiastic Coder & Solution Seeker</Emphasize> <br /><br /><br />
-            <Texting>As an software engineer at E42.ai and ex Beehyv Software Solutions, I am eager to advance my skills and thrive in an environment surrounded by talented professionals. <br /><br /></Texting>
+            <Texting>As an Solutions and POC Engineer at E42.ai and ex Beehyv Software Solutions, I am eager to advance my skills and thrive in an environment surrounded by talented professionals. <br /><br /></Texting>
             <Texting>I'm always available for engaging discussions on <Link to="https://www.linkedin.com/in/vilas-harapanahalli-96b231244/" style={{ color: "rgb(100, 255, 218)", textDecoration: "none" }}>@Linkedin </Link> </Texting><br /><br />
 
             <SearchWrap>
