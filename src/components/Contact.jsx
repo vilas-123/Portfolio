@@ -92,7 +92,7 @@ const Contact = () => {
               <SearchContainer>
                 {" "}
                 <a
-                  href="mailto:vilasharapanahalli@gmail.com"
+                  href="mailto:vilasharapanahalli317@gmail.com"
                   style={{
                     color: "rgb(100, 255, 218)",
                     textDecoration: "none",
