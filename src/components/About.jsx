@@ -126,11 +126,7 @@ const About = () => {
                 marginBottom: "2rem",
               }}
             >
-              Also, I have knowledge of Machine Learning, including Llama, RAG,
-              and Neural Networks, as well as Web Development. I've created
-              several projects using HTML, CSS, JavaScript, React.js, and other
-              cool libraries and frameworks. Additionally, I am proficient in
-              REST Framework, Django, and PineconeDB.
+              Also, I have  Successfully handled TATA Communications and JSW Steel clients through discovery sessions, POC execution, and ongoing engagement with strong technical knowledge of Machine Learning including LLaMA, RAG, and Neural Networks, as well as Web Development with expertise in HTML, CSS, JavaScript, React.js, and other frameworks by giving my best in REST Framework, Django, and PineconeDB. Proven track record of translating technical capabilities into customer-centric solutions
             </div>
 
             <div
