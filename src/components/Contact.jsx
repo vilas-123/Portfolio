@@ -65,10 +65,10 @@ const Contact = () => {
             <TextSectionPara>
               Mail me at:{" "}
               <a
-                href="mailto:vilasharapanahalli@gmail.com"
+                href="mailto:vilasharapanahalli317@gmail.com"
                 style={{ textDecoration: "none", color: "inherit" }}
               >
-                vilasharapanahalli@gmail.com{" "}
+                vilasharapanahalli317@gmail.com{" "}
               </a>
             </TextSectionPara>
 
@@ -80,6 +80,17 @@ const Contact = () => {
                 style={{ textDecoration: "none", color: "rgb(100, 255, 218)" }}
               >
                 https://github.com/vilas-123
+              </a>
+            </TextSectionPara>
+            <TextSectionPara>
+              LinkedIn:{" "}
+              <a
+                href="https://www.linkedin.com/in/vilas-harapanahalli-96b231244/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: "none", color: "rgb(100, 255, 218)" }}
+              >
+                Vilas Harapanahalli
               </a>
             </TextSectionPara>
             <TextSectionPara>

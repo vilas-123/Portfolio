@@ -1,56 +1,85 @@
-import React from 'react'
-import { styled } from 'styled-components'
-import { Link } from 'react-router-dom';
+import React from "react";
+import styled from "styled-components";
 
-const Wrapper = styled.div`
-  padding: 5% 10%;
-  align-items: center;
-  justify-content: space-between;
+const Wrapper = styled.section`
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 10rem 8rem 12rem;
+
+  @media (max-width: 768px) {
+    padding: 7rem 3rem 9rem;
+  }
 `;
 
-const Texting = styled.div`
-    font-size: 1.7rem;
-    color: rgb(136, 146, 176);
-    padding-right: 50%;
-    padding-bottom: 1rem;
-`
-
-const Emphasize = styled.div`
-    color: rgb(204, 214, 246);
-    font-size: 7rem;
-    font-weight: bold;
-`
-
-const SearchWrap = styled.div`
-    padding-right: 85%;
-    text-align: center;
-`
-
-const SearchContainer = styled.div`
-  border: 0.05rem solid rgb(100, 255, 218);
-  font-size: 1.7rem;
+const Eyebrow = styled.p`
   color: rgb(100, 255, 218);
-  align-items: center;
-  padding: 2rem;
-  border-radius: 1rem;
-  cursor: pointer;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
 `;
 
-const Home = () => {
-    return (
-        <Wrapper>
-            <Texting style={{ color: "rgb(100, 255, 218)" }}>Hello World! I am <br /></Texting>
-            <Emphasize style={{ color: "aliceblue" }}>Vilas Harapanahalli</Emphasize>
-            <Emphasize>  Enthusiastic Coder & Solution Seeker</Emphasize> <br /><br /><br />
-            <Texting>As an Solutions and POC Engineer at E42.ai and ex Beehyv Software Solutions, I am eager to advance my skills and thrive in an environment surrounded by talented professionals. <br /><br /></Texting>
-            <Texting>I'm always available for engaging discussions on <Link to="https://www.linkedin.com/in/vilas-harapanahalli-96b231244/" style={{ color: "rgb(100, 255, 218)", textDecoration: "none" }}>@Linkedin </Link> </Texting><br /><br />
+const Name = styled.h1`
+  color: aliceblue;
+  font-size: clamp(4rem, 8vw, 7rem);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+`;
 
-            <SearchWrap>
-                <a href="mailto:vilasharapanahalli317@gmail.com" style={{ color: "rgb(100, 255, 218)", textDecoration: "none" }}><SearchContainer> Hire Me! </SearchContainer></a>
-            </SearchWrap>
-        </Wrapper>
+const Role = styled.h2`
+  color: rgb(204, 214, 246);
+  font-size: clamp(2.6rem, 5vw, 4.5rem);
+  line-height: 1.2;
+  margin-bottom: 2rem;
+`;
 
-    )
-}
+const Summary = styled.p`
+  max-width: 72rem;
+  color: rgb(136, 146, 176);
+  font-size: 1.8rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+`;
 
-export default Home
+const LinkButton = styled.a`
+  display: inline-block;
+  border: 0.1rem solid rgb(100, 255, 218);
+  border-radius: 0.6rem;
+  color: rgb(100, 255, 218);
+  font-size: 1.7rem;
+  margin: 1rem 1.2rem 0 0;
+  padding: 1.2rem 1.8rem;
+  text-decoration: none;
+
+  &:hover {
+    background: rgba(100, 255, 218, 0.1);
+  }
+`;
+
+const Home = () => (
+  <Wrapper id="top">
+    <Eyebrow>AI/ML Engineer · MSc Computer Science, University of Bern</Eyebrow>
+    <Name>Vilas Harapanahalli</Name>
+    <Role>Building useful, efficient language-model systems.</Role>
+    <Summary>
+      I have nearly three years of experience building LLM-powered products and
+      cloud-native backends. I am now pursuing an MSc in Computer Science in
+      Switzerland, focusing on efficient and trustworthy language models,
+      including fine-tuning, retrieval-augmented generation, quantization, and
+      serving.
+    </Summary>
+    <Summary>
+      Previously, I worked at E42.ai and BeeHyv Software Solutions on AI
+      products, deployment platforms, industrial safety systems, and cloud
+      infrastructure.
+    </Summary>
+    <LinkButton href="mailto:vilasharapanahalli317@gmail.com">Get in touch</LinkButton>
+    <LinkButton
+      href="https://www.linkedin.com/in/vilas-harapanahalli-96b231244/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      LinkedIn
+    </LinkButton>
+  </Wrapper>
+);
+
+export default Home;

@@ -1,105 +1,29 @@
-// import React from 'react'
-// import { styled } from 'styled-components'
+import React, { useState } from "react";
+import styled from "styled-components";
 
-// const Container = styled.div`
-//   height: 6rem;
-// `;
-
-// const Wrapper = styled.div`
-//   padding: 3rem 3rem;
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-// `;
-
-// const Left = styled.div`
-//   flex: 1;
-//   display: flex;
-//   align-items: center;
-// `;
-
-// const SearchContainer = styled.div`
-//   border: 0.05rem solid rgb(100, 255, 218);
-//   font-size: 1.7rem;
-//   color: rgb(100, 255, 218);
-//   display: flex;
-//   align-items: center;
-//   margin-left: 2.5rem;
-//   padding: .5rem;
-// `;
-
-
-// const Logo = styled.h1`
-//   font-weight: bold;
-// `;
-// const Right = styled.div`
-//   flex: 1;
-//   display: flex;
-//   align-items: center;
-//   justify-content: flex-end;
-// `;
-
-// const MenuItem = styled.div`
-//   font-size: 1.6rem;
-//   cursor: pointer;
-//   text-decoration: none;
-//   font-weight: bold;
-//   padding: .5rem;
-//   margin-left: 2.5rem;
-// `;
-
-
-
-// const Navbar = () => {
-//   return (
-//     <Container>
-//       <Wrapper>
-//         <Left>
-//           <Logo> PORTFOLIO</Logo>
-//         </Left>
-//         <Right>
-//           <a href='#about' style={{ textDecoration: "none", color: "whiteSmoke" }}><MenuItem> ABOUT </MenuItem></a>
-//           <a href='#skills' style={{ textDecoration: "none", color: "whiteSmoke" }}><MenuItem> SKILLS </MenuItem></a>
-//           <a href='#projects' style={{ textDecoration: "none", color: "whiteSmoke" }}><MenuItem> PROJECTS </MenuItem></a>
-//           <a href='#contact' style={{ textDecoration: "none", color: "whiteSmoke" }}><MenuItem> CONTACT </MenuItem></a>
-//           <a href='https://drive.google.com/file/d/1f-evjtGEivqHQowOo_VDi1Ck-DoilnKS/view?usp=sharing' style={{ textDecoration: "none", color: "whiteSmoke" }}><SearchContainer> RESUME</SearchContainer></a>
-//         </Right>
-//       </Wrapper>
-//     </Container>
-//   )
-// }
-
-// export default Navbar
-
-import React, { useState } from 'react';
-import styled from 'styled-components';
-
-const Container = styled.div`
-  height: 6rem;
+const Container = styled.nav`
+  min-height: 6rem;
   position: relative;
   z-index: 100;
 `;
 
 const Wrapper = styled.div`
-  padding: 3rem;
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 2rem 3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 `;
 
-const Left = styled.div`
-  flex: 1;
-  display: flex;
-  align-items: center;
-`;
-
-const Logo = styled.h1`
-  font-weight: bold;
+const Logo = styled.a`
   color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
 `;
 
 const Right = styled.div`
-  flex: 1;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -108,93 +32,95 @@ const Right = styled.div`
     position: absolute;
     top: 6rem;
     right: 0;
-    background-color: #0a192f; /* Adjust to your bg */
     width: 100%;
+    background-color: #0a192f;
     flex-direction: column;
     align-items: flex-start;
     padding: 1rem 2rem;
-    display: ${props => (props.open ? 'flex' : 'none')};
+    display: ${(props) => (props.open ? "flex" : "none")};
   }
 `;
 
-const MenuItem = styled.div`
-  font-size: 1.6rem;
-  cursor: pointer;
+const MenuLink = styled.a`
+  color: whiteSmoke;
+  font-size: 1.5rem;
   font-weight: bold;
+  margin-left: 2rem;
   padding: 0.5rem;
-  margin-left: 2.5rem;
+  text-decoration: none;
 
   @media (max-width: 768px) {
     margin: 1rem 0;
-    margin-left: 0;
   }
 `;
 
-const SearchContainer = styled.div`
-  border: 0.05rem solid rgb(100, 255, 218);
-  font-size: 1.7rem;
+const LinkedInLink = styled(MenuLink)`
+  border: 0.1rem solid rgb(100, 255, 218);
   color: rgb(100, 255, 218);
-  display: flex;
-  align-items: center;
-  padding: 0.5rem;
-
-  @media (max-width: 768px) {
-    margin-top: 1rem;
-  }
 `;
 
-const Hamburger = styled.div`
+const Hamburger = styled.button`
   display: none;
-  flex-direction: column;
+  border: 0;
+  background: transparent;
   cursor: pointer;
 
   @media (max-width: 768px) {
     display: flex;
+    flex-direction: column;
   }
 
-  div {
-    width: 25px;
-    height: 3px;
+  span {
+    width: 2.5rem;
+    height: 0.3rem;
     background-color: white;
-    margin: 3px 0;
+    margin: 0.3rem 0;
   }
 `;
 
+const links = [
+  ["About", "#about"],
+  ["Experience", "#experience"],
+  ["Education", "#education"],
+  ["Projects", "#projects"],
+  ["Awards", "#achievements"],
+  ["Contact", "#contact"],
+];
+
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const closeMenu = () => setOpen(false);
 
   return (
     <Container>
       <Wrapper>
-        <Left>
-          <Logo>PORTFOLIO</Logo>
-        </Left>
-
-        <Hamburger onClick={() => setOpen(!open)}>
-          <div />
-          <div />
-          <div />
+        <Logo href="#top" onClick={closeMenu}>
+          PORTFOLIO
+        </Logo>
+        <Hamburger
+          type="button"
+          aria-label={open ? "Close navigation menu" : "Open navigation menu"}
+          aria-expanded={open}
+          onClick={() => setOpen(!open)}
+        >
+          <span />
+          <span />
+          <span />
         </Hamburger>
-
         <Right open={open}>
-          <a href="#about" style={{ textDecoration: "none", color: "whiteSmoke" }}>
-            <MenuItem>ABOUT</MenuItem>
-          </a>
-          <a href="#skills" style={{ textDecoration: "none", color: "whiteSmoke" }}>
-            <MenuItem>SKILLS</MenuItem>
-          </a>
-          <a href="#projects" style={{ textDecoration: "none", color: "whiteSmoke" }}>
-            <MenuItem>PROJECTS</MenuItem>
-          </a>
-          <a href="#contact" style={{ textDecoration: "none", color: "whiteSmoke" }}>
-            <MenuItem>CONTACT</MenuItem>
-          </a>
-          <a
-            href="https://drive.google.com/file/d/1f-evjtGEivqHQowOo_VDi1Ck-DoilnKS/view?usp=sharing"
-            style={{ textDecoration: "none", color: "whiteSmoke" }}
+          {links.map(([label, href]) => (
+            <MenuLink key={href} href={href} onClick={closeMenu}>
+              {label}
+            </MenuLink>
+          ))}
+          <LinkedInLink
+            href="https://www.linkedin.com/in/vilas-harapanahalli-96b231244/"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={closeMenu}
           >
-            <SearchContainer>RESUME</SearchContainer>
-          </a>
+            LinkedIn
+          </LinkedInLink>
         </Right>
       </Wrapper>
     </Container>

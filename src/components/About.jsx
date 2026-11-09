@@ -1,196 +1,112 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-const About = () => {
-  return (
-    <div
+const skills = [
+  "Python",
+  "Java",
+  "JavaScript",
+  "FastAPI",
+  "React",
+  "Angular",
+  "PyTorch",
+  "TensorFlow",
+  "TensorRT",
+  "ONNX Runtime",
+  "LangChain",
+  "LangGraph",
+  "RAG",
+  "MongoDB",
+  "PostgreSQL",
+  "AWS",
+  "Terraform",
+  "Docker",
+  "Kubernetes",
+  "Jenkins",
+];
+
+const About = () => (
+  <section
+    id="about"
+    style={{
+      maxWidth: "120rem",
+      margin: "0 auto",
+      padding: "5% 8%",
+    }}
+  >
+    <h2
       style={{
-        padding: "5% 10%",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "space-between",
+        fontSize: "3rem",
+        color: "aliceblue",
+        paddingBottom: "2rem",
       }}
     >
-      <div style={{ maxWidth: "120rem", margin: "0 auto", padding: "2rem" }}>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "space-between",
-            alignItems: "flex-start",
-          }}
-        >
-          <div style={{ maxWidth: "100%" }}>
-            <div
-              style={{
-                fontSize: "3rem",
-                color: "aliceblue",
-                fontWeight: "bold",
-                paddingBottom: "4rem",
-              }}
-              id="about"
-            >
-              About Me
-            </div>
-            
-            <div
-  style={{
-    maxWidth: "35%",
-    // Add margin auto to center the container itself
-    margin: "0 auto",
-    textAlign: "center",
-    position: "relative",
-    transition: "all 0.5s ease",
-    opacity: 0.9,
-  }}
-  onMouseEnter={(e) => {
-    e.currentTarget.style.backgroundColor = "#e9f5f5";
-    e.currentTarget.style.transform = "scale(1.1)";
-    e.currentTarget.style.opacity = "1";
-  }}
-  onMouseLeave={(e) => {
-    e.currentTarget.style.backgroundColor = "transparent";
-    e.currentTarget.style.transform = "scale(1)";
-    e.currentTarget.style.opacity = "0.9";
-  }}
->
-  <div style={{ 
-    display: 'flex',
-    justifyContent: 'center', // Add this to center the image horizontally
-    alignItems: 'center'      // Add this to center the image vertically
-  }}>
-    <img
-      src={require("../images/Profile2.jpeg")}
-      alt="Profile"
+      About Me
+    </h2>
+    <div
       style={{
-        maxWidth: "100%",
-        borderRadius: "1rem",
-        border: ".1rem solid #6c63ff"
-        // Remove margin: "0 auto" since we're using flex centering
+        display: "flex",
+        alignItems: "center",
+        gap: "3rem",
+        flexWrap: "wrap",
+        marginBottom: "2rem",
       }}
-    />
-  </div>
-</div>
-            <div
-              style={{
-                lineHeight: "1.6",
-                fontSize: "1.8rem",
-                color: "rgb(136, 146, 176)",
-                marginBottom: "2rem",
-              }}
-            >
-              Hello! My journey began as a high school student with a keen
-              interest in Mathematics. I was introduced to programming during
-              my freshman year at the
-              <Link
-                to="https://vtu.ac.in/en/"
-                style={{ color: "rgb(100, 255, 218)", textDecoration: "none" }}
-                target="_blank"
-              >
-                Visvesvaraya Technological University
-              </Link>
-              . My passion for coding ignited in 2020, during my first year of
-              B.Tech. Since then, I have immersed myself in learning various
-              programming languages and honing my skills in solving complex
-              problems using data structures and algorithms. Above all, I pride
-              myself on being a dedicated Problem Solver.
-            </div>
-
-            <div
-              style={{
-                lineHeight: "1.6",
-                fontSize: "1.8rem",
-                color: "rgb(136, 146, 176)",
-                marginBottom: "2rem",
-              }}
-            >
-              I've pursued my Bachelors in Computer Science Engineering
-              (2020-2024) with&nbsp;
-              <a
-                href="https://drive.google.com/file/d/1m_2LDyGIBJ2V2pKCp-2aouZfhrphxexZ/view?usp=sharing"
-                style={{ color: "rgb(100, 255, 218)", textDecoration: "none" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                8.30 CGPA aggregate
-              </a>
-              .
-            </div>
-
-            <div
-              style={{
-                lineHeight: "1.6",
-                fontSize: "1.8rem",
-                color: "rgb(136, 146, 176)",
-                marginBottom: "2rem",
-              }}
-            >
-              Also, I have  Successfully handled TATA Communications and JSW Steel clients through discovery sessions, POC execution, and ongoing engagement with strong technical knowledge of Machine Learning including LLaMA, RAG, and Neural Networks, as well as Web Development with expertise in HTML, CSS, JavaScript, React.js, and other frameworks by giving my best in REST Framework, Django, and PineconeDB. Proven track record of translating technical capabilities into customer-centric solutions
-            </div>
-
-            <div
-              style={{
-                lineHeight: "1.6",
-                fontSize: "1.8rem",
-                color: "rgb(136, 146, 176)",
-                marginBottom: "2rem",
-              }}
-              id="skills"
-            >
-              Here is a list of the technologies that I've worked with.
-            </div>
-
-            <div
-              style={{
-                display: "flex",
-                flexWrap: "wrap",
-                listStyleType: "none",
-                padding: 0,
-              }}
-            >
-              {[
-                "Python",
-                "SQL",
-                "JavaScript",
-                "ReactJS || Typescript",
-                "Deeplearning",
-                "Bootstrap",
-                "Material UI",
-                "Natural Language Processing(NLP)",
-                "Data Structures",
-                "Git || Github",
-                "AWS",
-                "Jenkins",
-                "DBMS",
-                "Apache Kafka",
-                "ML Libraries",
-                "Numpy || Pandas || Matplotlib",
-                "Docker",
-              ].map((tech, index) => (
-                <div
-                  key={index}
-                  style={{
-                    marginRight: "1.5rem",
-                    marginBottom: "1rem",
-                    fontSize: "1.5rem",
-                    color: "rgb(100, 255, 218)",
-                    backgroundColor: "#1b263b",
-                    padding: "0.5rem 1rem",
-                    borderRadius: "0.5rem",
-                  }}
-                >
-                  {tech}
-                </div>
-              ))}
-            </div>
-          </div>
-
-
-        </div>
+    >
+      <img
+        src={require("../images/Profile2.jpeg")}
+        alt="Vilas Harapanahalli"
+        style={{
+          width: "min(22rem, 100%)",
+          borderRadius: "1rem",
+          border: ".1rem solid #6c63ff",
+        }}
+      />
+      <p
+        style={{
+          flex: "1 1 36rem",
+          lineHeight: "1.7",
+          fontSize: "1.8rem",
+          color: "rgb(136, 146, 176)",
+        }}
+      >
+        I am an AI/ML engineer with almost three years of experience delivering
+        language-model applications and production backends. I earned my
+        bachelor&apos;s degree in Computer Science from Visvesvaraya
+        Technological University (CGPA 8.03/10) and am pursuing a master&apos;s
+        degree at the University of Bern. My current interests are efficient
+        and trustworthy language models, from fine-tuning and retrieval to
+        quantization and deployment.
+      </p>
+    </div>
+    <div
+      id="skills"
+      style={{
+        lineHeight: "1.6",
+        fontSize: "1.8rem",
+        color: "rgb(136, 146, 176)",
+        marginBottom: "1.5rem",
+      }}
+    >
+      <h3 style={{ color: "aliceblue", fontSize: "2.2rem", marginBottom: "1rem" }}>
+        Technical Skills
+      </h3>
+      <div style={{ display: "flex", flexWrap: "wrap" }}>
+        {skills.map((skill) => (
+          <span
+            key={skill}
+            style={{
+              margin: "0 1rem 1rem 0",
+              fontSize: "1.5rem",
+              color: "rgb(100, 255, 218)",
+              backgroundColor: "#1b263b",
+              padding: "0.5rem 1rem",
+              borderRadius: "0.5rem",
+            }}
+          >
+            {skill}
+          </span>
+        ))}
       </div>
     </div>
-  );
-};
+  </section>
+);
 
 export default About;
