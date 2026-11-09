@@ -51,7 +51,7 @@ const About = () => (
       }}
     >
       <img
-        src={require("../images/Profile2.jpeg")}
+        src={require("../images/Profile.png")}
         alt="Vilas Harapanahalli"
         style={{
           width: "min(22rem, 100%)",
