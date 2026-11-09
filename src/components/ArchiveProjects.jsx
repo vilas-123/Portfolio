@@ -150,19 +150,6 @@ const TechnologiesList = styled.div`
   }
 `;
 
-const ProjectLink = styled.a`
-  width: 100%;
-  display: block;
-  
-  img {
-    width: 100%;
-    height: auto;
-    max-width: 50rem;
-    max-height: 30rem;
-    object-fit: cover;
-    border-radius: 0.5rem;
-  }
-`;
 const ArchiveProjects = () => {
   return (
     <>
