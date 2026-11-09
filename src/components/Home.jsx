@@ -4,10 +4,10 @@ import styled from "styled-components";
 const Wrapper = styled.section`
   max-width: 120rem;
   margin: 0 auto;
-  padding: 10rem 8rem 12rem;
+  padding: 10rem 8rem 1.5rem;
 
   @media (max-width: 768px) {
-    padding: 7rem 3rem 9rem;
+    padding: 7rem 3rem 1.5rem;
   }
 `;
 
