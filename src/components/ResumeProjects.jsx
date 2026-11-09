@@ -4,13 +4,13 @@ import styled from "styled-components";
 const Section = styled.section`
   max-width: 120rem;
   margin: 0 auto;
-  padding: 3.5rem 8%;
+  padding: 1.5rem 8%;
 `;
 
 const Card = styled.article`
   background: #1b263b;
   border-left: 0.3rem solid rgb(100, 255, 218);
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
   padding: 2.5rem;
 `;
 
@@ -46,7 +46,7 @@ const Projects = () => (
       style={{
         color: "aliceblue",
         fontSize: "3rem",
-        marginBottom: "2rem",
+        marginBottom: "1.5rem",
       }}
     >
       Recent Academic & Research Projects

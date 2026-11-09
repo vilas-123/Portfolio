@@ -28,13 +28,13 @@ const jobs = [
 const Experience = () => (
   <section
     id="experience"
-    style={{ maxWidth: "120rem", margin: "0 auto", padding: "3.5rem 8%" }}
+    style={{ maxWidth: "120rem", margin: "0 auto", padding: "1.5rem 8%" }}
   >
     <h2
       style={{
         color: "aliceblue",
         fontSize: "3rem",
-        marginBottom: "2rem",
+        marginBottom: "1.5rem",
       }}
     >
       Experience
@@ -45,7 +45,7 @@ const Experience = () => (
         style={{
           backgroundColor: "#1b263b",
           borderLeft: "0.3rem solid rgb(100, 255, 218)",
-          marginBottom: "2rem",
+          marginBottom: "1.25rem",
           padding: "2rem 2.5rem",
         }}
       >

@@ -82,7 +82,7 @@ const About = () => (
         lineHeight: "1.6",
         fontSize: "1.8rem",
         color: "rgb(136, 146, 176)",
-        marginBottom: "1.5rem",
+        marginBottom: "0.5rem",
       }}
     >
       <h3 style={{ color: "aliceblue", fontSize: "2.2rem", marginBottom: "1rem" }}>

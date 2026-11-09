@@ -2,7 +2,7 @@ import React from "react";
 import { styled } from "styled-components";
 
 const Wrapper = styled.div`
-  padding: 5% 10%;
+  padding: 1.5rem 8%;
   align-items: center;
   justify-content: space-between;
   box-shadow: 0rem 0.8rem 0.6rem -0.6rem gray;
@@ -11,7 +11,7 @@ const Wrapper = styled.div`
 const Container = styled.div`
   max-width: 120rem;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 2rem;
 `;
 
 const Content = styled.div`
@@ -21,7 +21,7 @@ const Content = styled.div`
 `;
 
 const TextSection = styled.div`
-  padding: 0rem 20%;
+  padding: 0 10%;
 `;
 
 const TextSectionHeading = styled.div`

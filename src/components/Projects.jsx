@@ -3,22 +3,22 @@ import { styled } from "styled-components";
 import { Link } from "react-router-dom";
 
 const Wrapper = styled.div`
-  padding: 3.5rem 8%;
+  padding: 1.5rem 8%;
   align-items: center;
   justify-content: space-between;
   
   @media (max-width: 768px) {
-    padding: 5% 5%;
+    padding: 1.5rem 5%;
   }
 `;
 
 const Container = styled.div`
   max-width: 120rem;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 2rem;
   
   @media (max-width: 768px) {
-    padding: 1rem;
+    padding: 0 1rem;
   }
 `;
 
@@ -31,7 +31,7 @@ const TextSectionHeading = styled.div`
   font-size: 3rem;
   color: aliceblue;
   font-weight: bold;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   
   @media (max-width: 768px) {
     font-size: 2.5rem;

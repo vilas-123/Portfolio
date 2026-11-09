@@ -3,13 +3,13 @@ import React from "react";
 const Achievements = () => (
   <section
     id="achievements"
-    style={{ maxWidth: "120rem", margin: "0 auto", padding: "3.5rem 8%" }}
+    style={{ maxWidth: "120rem", margin: "0 auto", padding: "1.5rem 8%" }}
   >
     <h2
       style={{
         color: "aliceblue",
         fontSize: "3rem",
-        marginBottom: "2rem",
+        marginBottom: "1.5rem",
       }}
     >
       Awards & Achievements
