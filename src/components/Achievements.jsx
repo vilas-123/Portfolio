@@ -3,7 +3,7 @@ import React from "react";
 const Achievements = () => (
   <section
     id="achievements"
-    style={{ maxWidth: "120rem", margin: "0 auto", padding: "5% 8%" }}
+    style={{ maxWidth: "120rem", margin: "0 auto", padding: "3.5rem 8%" }}
   >
     <h2
       style={{
@@ -98,6 +98,39 @@ const Achievements = () => (
       >
         Hackathon announcement
       </a>
+      <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 28rem), 1fr))",
+        gap: "1.5rem",
+        marginTop: "2rem",
+      }}
+      >
+      <img
+        src={require("../images/HackAppertus-Presentation.png")}
+        alt="Presenting the project with a teammate at HackAppertus"
+        loading="lazy"
+        style={{
+          width: "100%",
+          height: "28rem",
+          objectFit: "cover",
+          objectPosition: "center 55%",
+          borderRadius: "0.8rem",
+        }}
+      />
+      <img
+        src={require("../images/HackAppertus-Team.png")}
+        alt="HackAppertus project team at the event"
+        loading="lazy"
+        style={{
+          width: "100%",
+          height: "28rem",
+          objectFit: "cover",
+          objectPosition: "center 45%",
+          borderRadius: "0.8rem",
+        }}
+      />
+      </div>
     </article>
   </section>
 );

@@ -29,7 +29,7 @@ const About = () => (
     style={{
       maxWidth: "120rem",
       margin: "0 auto",
-      padding: "5% 8%",
+      padding: "3.5rem 8%",
     }}
   >
     <h2

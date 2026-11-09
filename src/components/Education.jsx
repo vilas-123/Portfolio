@@ -3,13 +3,13 @@ import React from "react";
 const Education = () => (
   <section
     id="education"
-    style={{ maxWidth: "120rem", margin: "0 auto", padding: "5% 8%" }}
+    style={{ maxWidth: "120rem", margin: "0 auto", padding: "3.5rem 8%" }}
   >
     <h2
       style={{
         color: "aliceblue",
         fontSize: "3rem",
-        marginBottom: "3rem",
+        marginBottom: "2rem",
       }}
     >
       Education

@@ -3,7 +3,7 @@ import { styled } from "styled-components";
 import { Link } from "react-router-dom";
 
 const Wrapper = styled.div`
-  padding: 5% 10%;
+  padding: 3.5rem 8%;
   align-items: center;
   justify-content: space-between;
   
@@ -62,7 +62,7 @@ const ProjectCard = styled.div`
   border-radius: 1rem;
   position: relative;
   overflow: hidden;
-  padding-bottom: 9rem;
+  padding-bottom: 4rem;
 
   @media (max-width: 768px) {
     flex-direction: column;

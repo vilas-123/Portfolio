@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Section = styled.section`
   max-width: 120rem;
   margin: 0 auto;
-  padding: 5% 8%;
+  padding: 3.5rem 8%;
 `;
 
 const Card = styled.article`
@@ -46,7 +46,7 @@ const Projects = () => (
       style={{
         color: "aliceblue",
         fontSize: "3rem",
-        marginBottom: "3rem",
+        marginBottom: "2rem",
       }}
     >
       Recent Academic & Research Projects
