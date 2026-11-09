@@ -40,6 +40,21 @@ const ProjectLink = styled.a`
   display: inline-block;
 `;
 
+const DocumentLink = styled.a`
+  display: inline-block;
+  margin: 1.2rem 1rem 0 0;
+  padding: 0.9rem 1.3rem;
+  border: 0.1rem solid rgba(100, 255, 218, 0.55);
+  border-radius: 0.6rem;
+  color: rgb(100, 255, 218);
+  font-size: 1.5rem;
+  text-decoration: none;
+
+  &:hover {
+    background: rgba(100, 255, 218, 0.1);
+  }
+`;
+
 const Projects = () => (
   <Section id="recent-projects">
     <h2
@@ -94,7 +109,7 @@ const Projects = () => (
     </Card>
     <div style={{ margin: "2rem 0 1rem" }}>
       <h3 style={{ color: "aliceblue", fontSize: "2.3rem" }}>
-        Bachelor&apos;s Projects
+        Bachelor&apos;s Thesis
       </h3>
       <p
         style={{
@@ -107,13 +122,38 @@ const Projects = () => (
       </p>
     </div>
     <Card>
-      <Title>Virtual Mouse using Hand Gestures</Title>
+      <Title>Virtual Mouse Using Hand Gestures</Title>
       <Description>
-        Bachelor&apos;s capstone: a real-time webcam hand-tracking system for
+        Bachelor&apos;s thesis: a real-time webcam hand-tracking system for
         controlling the cursor, clicking, scrolling, and adjusting volume and
-        brightness without additional hardware.
+        brightness without additional hardware. Published in the International
+        Journal of Advanced Research in Computer and Communication Engineering
+        (IJARCCE), Volume 13, Issue 4, April 2024.
       </Description>
       <Tags>Python · OpenCV · MediaPipe · PyAutoGUI</Tags>
+      <div>
+        <DocumentLink
+          href="/documents/virtual-mouse-publication-certificate.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View publication certificate
+        </DocumentLink>
+        <DocumentLink
+          href="/documents/btech-transcript.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View VTU transcript
+        </DocumentLink>
+        <DocumentLink
+          href="/documents/degree-completion-certificate.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View degree completion certificate
+        </DocumentLink>
+      </div>
     </Card>
     <div style={{ margin: "2rem 0 1rem" }}>
       <h3 style={{ color: "aliceblue", fontSize: "2.3rem" }}>
