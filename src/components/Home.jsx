@@ -12,18 +12,21 @@ const Wrapper = styled.section`
 `;
 
 const Quote = styled.blockquote`
-  color: rgb(100, 255, 218);
-  font-size: 2rem;
+  border-left: 0.3rem solid rgb(100, 255, 218);
+  color: rgb(136, 146, 176);
+  font-size: 1.7rem;
   font-style: italic;
-  margin-bottom: 1rem;
+  line-height: 1.5;
+  margin: 0 0 1.5rem;
+  padding-left: 1.2rem;
 `;
 
 const Opening = styled.p`
   max-width: 72rem;
   color: rgb(204, 214, 246);
-  font-size: 1.8rem;
-  line-height: 1.6;
-  margin-bottom: 2rem;
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
 `;
 
 const Eyebrow = styled.p`
@@ -41,9 +44,9 @@ const Name = styled.h1`
 
 const Role = styled.h2`
   color: rgb(204, 214, 246);
-  font-size: clamp(2.6rem, 5vw, 4.5rem);
-  line-height: 1.2;
-  margin-bottom: 2rem;
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  line-height: 1.3;
+  margin-bottom: 1.5rem;
 `;
 
 const Summary = styled.p`
@@ -71,27 +74,20 @@ const LinkButton = styled.a`
 
 const Home = () => (
   <Wrapper id="top">
-    <Quote>“The important thing is not to stop questioning.”</Quote>
-    <Opening>
-      I build language-model systems to solve real problems.
-      <br />
-      Curiosity drives me to make them more efficient, grounded, and
-      trustworthy.
-    </Opening>
-    <Eyebrow>AI/ML Engineer · MSc Computer Science, University of Bern</Eyebrow>
+    <Eyebrow>MSc Computer Science · University of Bern</Eyebrow>
     <Name>Vilas Harapanahalli</Name>
-    <Role>Building useful, efficient language-model systems.</Role>
+    <Role>AI/ML Engineer building language-model systems.</Role>
+    <Quote>
+      “The important thing is not to stop questioning.” <span>— Albert Einstein</span>
+    </Quote>
+    <Opening>
+      Curiosity drives me to look beneath the model—and turn what I learn into
+      practical, reliable AI.
+    </Opening>
     <Summary>
-      I have nearly three years of experience building LLM-powered products and
-      cloud-native backends. I am now pursuing an MSc in Computer Science in
-      Switzerland, focusing on efficient and trustworthy language models,
-      including fine-tuning, retrieval-augmented generation, quantization, and
-      serving.
-    </Summary>
-    <Summary>
-      Previously, I worked at E42.ai and BeeHyv Software Solutions on AI
-      products, deployment platforms, industrial safety systems, and cloud
-      infrastructure.
+      Nearly three years building LLM-powered products and cloud-native
+      backends at E42.ai and BeeHyv. Now pursuing an MSc at the University of
+      Bern, focused on efficient and trustworthy language models.
     </Summary>
     <LinkButton href="mailto:vilasharapanahalli317@gmail.com">Get in touch</LinkButton>
     <LinkButton
