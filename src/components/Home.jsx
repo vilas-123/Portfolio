@@ -4,11 +4,26 @@ import styled from "styled-components";
 const Wrapper = styled.section`
   max-width: 120rem;
   margin: 0 auto;
-  padding: 10rem 8rem 1.5rem;
+  padding: 3rem 8rem 1.5rem;
 
   @media (max-width: 768px) {
-    padding: 7rem 3rem 1.5rem;
+    padding: 2rem 3rem 1.5rem;
   }
+`;
+
+const Quote = styled.blockquote`
+  color: rgb(100, 255, 218);
+  font-size: 2rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+`;
+
+const Opening = styled.p`
+  max-width: 72rem;
+  color: rgb(204, 214, 246);
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
 `;
 
 const Eyebrow = styled.p`
@@ -56,6 +71,13 @@ const LinkButton = styled.a`
 
 const Home = () => (
   <Wrapper id="top">
+    <Quote>“The important thing is not to stop questioning.”</Quote>
+    <Opening>
+      I build language-model systems to solve real problems.
+      <br />
+      Curiosity drives me to make them more efficient, grounded, and
+      trustworthy.
+    </Opening>
     <Eyebrow>AI/ML Engineer · MSc Computer Science, University of Bern</Eyebrow>
     <Name>Vilas Harapanahalli</Name>
     <Role>Building useful, efficient language-model systems.</Role>
