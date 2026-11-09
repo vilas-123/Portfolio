@@ -49,8 +49,23 @@ const Projects = () => (
         marginBottom: "1.5rem",
       }}
     >
-      Recent Academic & Research Projects
+      Academic & Research Projects
     </h2>
+    <div style={{ margin: "1.5rem 0 1rem" }}>
+      <h3 style={{ color: "aliceblue", fontSize: "2.3rem" }}>
+        Master&apos;s Projects
+      </h3>
+      <p
+        style={{
+          color: "rgb(136, 146, 176)",
+          fontSize: "1.6rem",
+          marginTop: "0.4rem",
+        }}
+      >
+        University of Bern · Joint MSc programme with the Universities of
+        Neuchâtel and Fribourg
+      </p>
+    </div>
     <Card>
       <Title>CiteRight — Efficient, grounded language models</Title>
       <Description>
@@ -62,10 +77,63 @@ const Projects = () => (
       <Tags>LoRA · DPO · Quantization · vLLM · Model evaluation</Tags>
     </Card>
     <Card>
-      <Title>Apertus-ParlTopics-8B — HackAppertus 2026</Title>
+      <Title>Famigo — Family task-and-reward app</Title>
       <Description>
-        Team project that earned 3rd place at the October 2026 HackAppertus.
-        We LoRA fine-tuned Apertus 8B to assign Swiss parliamentary affairs to
+        User-centered design team project for a family app that helps children
+        build confidence and responsibility through shared tasks and rewards.
+      </Description>
+      <Tags>User-centered design · Product design</Tags>
+    </Card>
+    <Card>
+      <Title>Fuzzy-logic robot for delicate objects</Title>
+      <Description>
+        Fuzzy Sets team project exploring a robot that can handle slippery and
+        fragile objects.
+      </Description>
+      <Tags>Fuzzy logic · Robotics</Tags>
+    </Card>
+    <div style={{ margin: "2rem 0 1rem" }}>
+      <h3 style={{ color: "aliceblue", fontSize: "2.3rem" }}>
+        Bachelor&apos;s Projects
+      </h3>
+      <p
+        style={{
+          color: "rgb(136, 146, 176)",
+          fontSize: "1.6rem",
+          marginTop: "0.4rem",
+        }}
+      >
+        Visvesvaraya Technological University (VTU)
+      </p>
+    </div>
+    <Card>
+      <Title>Virtual Mouse using Hand Gestures</Title>
+      <Description>
+        Bachelor&apos;s capstone: a real-time webcam hand-tracking system for
+        controlling the cursor, clicking, scrolling, and adjusting volume and
+        brightness without additional hardware.
+      </Description>
+      <Tags>Python · OpenCV · MediaPipe · PyAutoGUI</Tags>
+    </Card>
+    <div style={{ margin: "2rem 0 1rem" }}>
+      <h3 style={{ color: "aliceblue", fontSize: "2.3rem" }}>
+        Hackathon Project
+      </h3>
+      <p
+        style={{
+          color: "rgb(136, 146, 176)",
+          fontSize: "1.6rem",
+          marginTop: "0.4rem",
+        }}
+      >
+        HackAppertus 2026 · 3rd place
+      </p>
+    </div>
+    <Card>
+      <Title>Apertus-ParlTopics-8B</Title>
+      <Description>
+        Team project that earned 3rd place at HackAppertus in October 2026. We
+        LoRA fine-tuned Apertus 8B to assign Swiss parliamentary affairs to
         topics in one forward pass, matching a closed frontier model across
         three labelling schemes. The model was used to label 318,801 affairs
         in OpenParlData.
@@ -92,31 +160,6 @@ const Projects = () => (
       >
         Project slides
       </ProjectLink>
-    </Card>
-    <Card>
-      <Title>Famigo — Family task-and-reward app</Title>
-      <Description>
-        User-centered design team project for a family app that helps children
-        build confidence and responsibility through shared tasks and rewards.
-      </Description>
-      <Tags>User-centered design · Product design</Tags>
-    </Card>
-    <Card>
-      <Title>Fuzzy-logic robot for delicate objects</Title>
-      <Description>
-        Fuzzy Sets team project exploring a robot that can handle slippery and
-        fragile objects.
-      </Description>
-      <Tags>Fuzzy logic · Robotics</Tags>
-    </Card>
-    <Card>
-      <Title>Virtual Mouse using Hand Gestures</Title>
-      <Description>
-        Bachelor&apos;s capstone: a real-time webcam hand-tracking system for
-        controlling the cursor, clicking, scrolling, and adjusting volume and
-        brightness without additional hardware.
-      </Description>
-      <Tags>Python · OpenCV · MediaPipe · PyAutoGUI</Tags>
     </Card>
   </Section>
 );
