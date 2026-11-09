@@ -132,6 +132,15 @@ const Projects = () => (
       </Description>
       <Tags>Python · OpenCV · MediaPipe · PyAutoGUI</Tags>
       <div>
+        <h4
+          style={{
+            color: "aliceblue",
+            fontSize: "1.7rem",
+            marginTop: "1.8rem",
+          }}
+        >
+          Thesis & degree documents
+        </h4>
         <DocumentLink
           href="/documents/virtual-mouse-publication-certificate.pdf"
           target="_blank"
@@ -152,6 +161,29 @@ const Projects = () => (
           rel="noopener noreferrer"
         >
           View degree completion certificate
+        </DocumentLink>
+        <h4
+          style={{
+            color: "aliceblue",
+            fontSize: "1.7rem",
+            marginTop: "1.8rem",
+          }}
+        >
+          Professional letters of recommendation
+        </h4>
+        <DocumentLink
+          href="/documents/professional-recommendation-1.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View recommendation letter 1
+        </DocumentLink>
+        <DocumentLink
+          href="/documents/professional-recommendation-2.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View recommendation letter 2
         </DocumentLink>
       </div>
     </Card>
