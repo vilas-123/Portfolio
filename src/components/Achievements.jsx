@@ -12,8 +12,58 @@ const Achievements = () => (
         marginBottom: "2rem",
       }}
     >
-      Awards
+      Awards & Achievements
     </h2>
+    <article
+      style={{
+        backgroundColor: "#1b263b",
+        borderLeft: "0.3rem solid rgb(100, 255, 218)",
+        padding: "2rem 2.5rem",
+        marginBottom: "1.5rem",
+      }}
+    >
+      <p style={{ color: "rgb(136, 146, 176)", fontSize: "1.7rem", lineHeight: "1.7" }}>
+        Earned a Gold Google badge for excellence in NLP and large language models.
+      </p>
+    </article>
+    <article
+      style={{
+        backgroundColor: "#1b263b",
+        borderLeft: "0.3rem solid rgb(100, 255, 218)",
+        padding: "2rem 2.5rem",
+        marginBottom: "1.5rem",
+      }}
+    >
+      <p style={{ color: "rgb(136, 146, 176)", fontSize: "1.7rem", lineHeight: "1.7" }}>
+        Earned Cisco CCNA Security certification in 2023.
+      </p>
+    </article>
+    <article
+      style={{
+        backgroundColor: "#1b263b",
+        borderLeft: "0.3rem solid rgb(100, 255, 218)",
+        padding: "2rem 2.5rem",
+        marginBottom: "1.5rem",
+      }}
+    >
+      <p style={{ color: "rgb(136, 146, 176)", fontSize: "1.7rem", lineHeight: "1.7" }}>
+        Received an Excellence Certificate in the Cognitive Applications (ML)
+        Workshop, surpassing 500 participants.
+      </p>
+    </article>
+    <article
+      style={{
+        backgroundColor: "#1b263b",
+        borderLeft: "0.3rem solid rgb(100, 255, 218)",
+        padding: "2rem 2.5rem",
+        marginBottom: "1.5rem",
+      }}
+    >
+      <p style={{ color: "rgb(136, 146, 176)", fontSize: "1.7rem", lineHeight: "1.7" }}>
+        Winner of the IEEE Project Symposium Prakalp 2024 (Credentials:
+        STB99412).
+      </p>
+    </article>
     <article
       style={{
         backgroundColor: "#1b263b",

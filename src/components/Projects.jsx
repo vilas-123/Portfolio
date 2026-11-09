@@ -150,34 +150,6 @@ const TechnologiesList = styled.div`
   }
 `;
 
-const ProjectLink = styled.a`
-  width: 100%;
-  display: block;
-  
-  img {
-    width: 100%;
-    height: auto;
-    max-width: 50rem;
-    max-height: 30rem;
-    object-fit: cover;
-  }
-`;
-
-const ArchiveLink = styled(Link)`
-  text-decoration: none;
-  color: rgb(100, 255, 218);
-  font-size: 2.2rem;
-  padding-left: .8rem;
-  font-weight: lighter;
-
-  @media (max-width: 768px) {
-    font-size: 1.8rem;
-    display: block;
-    padding-left: 0;
-    margin-top: 1rem;
-  }
-`;
-
 const Projects = () => {
   return (
     <Wrapper>

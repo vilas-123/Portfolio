@@ -41,7 +41,7 @@ const ProjectLink = styled.a`
 `;
 
 const Projects = () => (
-  <Section id="projects">
+  <Section id="recent-projects">
     <h2
       style={{
         color: "aliceblue",
@@ -49,7 +49,7 @@ const Projects = () => (
         marginBottom: "3rem",
       }}
     >
-      Selected Projects
+      Recent Academic & Research Projects
     </h2>
     <Card>
       <Title>CiteRight — Efficient, grounded language models</Title>
