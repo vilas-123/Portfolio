@@ -67,13 +67,13 @@ const About = () => (
           color: "rgb(136, 146, 176)",
         }}
       >
-        I am an AI/ML engineer with almost three years of experience delivering
-        language-model applications and production backends. I earned my
-        bachelor&apos;s degree in Computer Science from Visvesvaraya
-        Technological University (CGPA 8.03/10) and am pursuing a master&apos;s
-        degree at the University of Bern. My current interests are efficient
-        and trustworthy language models, from fine-tuning and retrieval to
-        quantization and deployment.
+        I’m an AI/ML engineer, and for almost three years I’ve worked on
+        language-model applications and the backends that support them. I
+        studied Computer Science at Visvesvaraya Technological University,
+        graduating with a CGPA of 8.03/10. I’m now pursuing my master’s at the
+        University of Bern. These days, I’m especially interested in making
+        language models more efficient and trustworthy, from fine-tuning and
+        retrieval to quantization and serving.
       </p>
     </div>
     <div
@@ -86,7 +86,7 @@ const About = () => (
       }}
     >
       <h3 style={{ color: "aliceblue", fontSize: "2.2rem", marginBottom: "1rem" }}>
-        Technical Skills
+        Tools I Work With
       </h3>
       <div style={{ display: "flex", flexWrap: "wrap" }}>
         {skills.map((skill) => (

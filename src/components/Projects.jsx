@@ -156,7 +156,7 @@ const Projects = () => {
       <Container>
         <Content id="projects">
           <TextSectionHeading>
-            Selected Projects and Showcases{" "}
+            Projects I’ve Built{" "}
           </TextSectionHeading>
           <br />
           <ProjectCard>
@@ -182,17 +182,15 @@ const Projects = () => {
                   fontWeight: "lighter",
                 }}
               >
-                Featured Project
+                E-commerce
               </h3>
               <h2 style={{ fontSize: "2.2rem", color: "rgb(237, 135, 33)" }}>
                 Shopping Mart Full Stack Website
               </h2>
               <TextSectionPara>
-                Developed an e-commerce platform using ReactJs and Django
-                featuring over 70 apparel products for online shopping.
-                Engineered user-friendly functionalities to easily add/remove
-                items. Implemented efficient navigation features to help
-                customers easily locate items.
+                I built this React and Django shop with more than 70 apparel
+                items. Shoppers can browse the catalogue and add or remove
+                products from their cart.
               </TextSectionPara>
               <Technologies>
                 <TechnologiesList>Html</TechnologiesList>
@@ -230,21 +228,18 @@ const Projects = () => {
                   fontWeight: "lighter",
                 }}
               >
-                Featured Project{" "}
+                Machine learning
               </h3>
               <h2 style={{ fontSize: "2.2rem", color: "rgb(237, 135, 33)" }}>
-                Admission Prediction Model{" "}
+                Admission prediction model{" "}
               </h2>
 
               <TextSectionPara>
-                Admission Prediction Model (Keras) Built a machine learning
-                model using Keras to predict university admissions based on GRE,
-                GPA, TOEFL, SOP, and LOR. Designed a multi-layer neural network
-                and evaluated performance using R2 scores. Utilized data
-                preprocessing techniques to clean and handle missing values.
-                Achieved high prediction accuracy, demonstrating strong model
-                development and evaluation skills.Improved the accuacy by Adding
-                hiddenlayers and MInMax Scaler
+                I trained a Keras neural network to estimate admission chances
+                from GRE, GPA, TOEFL, statement-of-purpose, and recommendation
+                scores. I cleaned the data, handled missing values, and
+                improved the model with additional hidden layers and MinMax
+                scaling.
               </TextSectionPara>
               <Technologies>
                 <TechnologiesList>Keras</TechnologiesList>
@@ -281,18 +276,15 @@ const Projects = () => {
                   fontWeight: "lighter",
                 }}
               >
-                Featured Project
+                Generative AI
               </h3>
               <h2 style={{ fontSize: "2.2rem", color: "rgb(237, 135, 33)" }}>
-                Restaurant Generator using Langchain and Langserve
+                Restaurant suggestions with LangChain
               </h2>
               <TextSectionPara>
-                Engineered a Restaurant Generator tool using Langchain and
-                Langserve that provides restaurant recommendations based on a
-                city input. Users can enter a city, and the model generates a
-                list of relevant restaurants in that area. Enhanced the user
-                experience by integrating natural language processing for
-                accurate and dynamic restaurant suggestions.
+                Enter a city and the app suggests restaurants to try there. I
+                built it with LangChain and LangServe, using natural-language
+                processing to make the recommendations relevant to the place.
               </TextSectionPara>
 
               <Technologies>
@@ -327,19 +319,15 @@ const Projects = () => {
                   fontWeight: "lighter",
                 }}
               >
-                Featured Project
+                Music player
               </h3>
               <h2 style={{ fontSize: "2.2rem", color: "rgb(237, 135, 33)" }}>
                 Spotify Clone
               </h2>
               <TextSectionPara>
-                Play/Pause: Allows the user to start or pause the playback of
-                the currently selected track. 
-                Next/Previous: Enables the user to
-                skip to the next or previous track in the playlist or album.
-                Seek: Allows the user to manually move forward or backward
-                within a track by dragging a slider or clicking on a progress
-                bar. Display the currently playing song and album artwork.
+                A small Spotify-inspired player with play and pause, next and
+                previous track controls, a seek bar, and the current song’s
+                title and artwork.
               </TextSectionPara>
 
               <Technologies>
@@ -354,7 +342,7 @@ const Projects = () => {
 
           <TextSectionPara>
             <h2 style={{ fontSize: "2.2rem" }}>
-              Other Considerable projects ----
+              Want to see more?
               <span>
                 <Link
                   to={"/archiveProjects"}
@@ -366,7 +354,7 @@ const Projects = () => {
                     fontWeight: "lighter",
                   }}
                 >
-                  View the entire list of projects
+                  Browse my other projects
                 </Link>
               </span>
             </h2>

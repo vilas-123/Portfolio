@@ -2,14 +2,14 @@ import React from "react";
 
 const jobs = [
   {
-    company: "E42.ai — Light Information Systems",
-    title: "Software Developer / Full Stack — AI Engineer",
+    company: "E42.ai (Light Information Systems)",
+    title: "Software Developer / Full Stack AI Engineer",
     dates: "January 2025 – October 2026",
     location: "Pune, India",
     highlights: [
-      "Built an LLM-powered marketing chatbot and insights platform with LangChain and LangGraph agents, combining live news and campaign data from MongoDB.",
-      "Added RAG-based similarity search to match news and campaign signals with relevant products, reducing manual reporting effort by about 30%.",
-      "Designed a zero-touch delivery pipeline with Jenkins, SonarQube, Docker Hub, Argo CD, and Kubernetes, eliminating manual release steps.",
+      "I built a marketing chatbot and insights platform with LangChain and LangGraph. It brings together live news and campaign data stored in MongoDB.",
+      "I added a RAG search that connects news and campaign signals with relevant products. It cut the time spent on manual reporting by about 30%.",
+      "I also built an automated release pipeline with Jenkins, SonarQube, Docker Hub, Argo CD, and Kubernetes, so releases no longer needed manual steps.",
     ],
   },
   {
@@ -18,9 +18,9 @@ const jobs = [
     dates: "January 2024 – January 2025",
     location: "Hyderabad, India",
     highlights: [
-      "Implemented WebSocket connections to stream live chip status to the TensorXLabs client dashboard.",
-      "Developed an AI accident-prediction system using LoRA/QLoRA and RAG, with real-time alerts for industrial safety.",
-      "Provisioned and managed AWS infrastructure across EC2, EKS, and S3 using Terraform.",
+      "I added WebSocket connections that stream live chip status to TensorXLabs’ dashboard.",
+      "I worked on an AI accident-prediction system using LoRA/QLoRA and RAG, with real-time alerts for industrial safety.",
+      "I set up and managed AWS infrastructure on EC2, EKS, and S3 with Terraform.",
     ],
   },
 ];

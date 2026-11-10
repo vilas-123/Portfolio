@@ -155,7 +155,7 @@ const ArchiveProjects = () => {
     <>
       <Navbar2 />
       <Wrapper>
-        <Emphasize> Other Noteworthy Projects</Emphasize>
+        <Emphasize>A few more things I’ve built</Emphasize>
         <Container>
           <Content>
             <ProjectCard>
@@ -176,10 +176,9 @@ const ArchiveProjects = () => {
                   RAG Chatbot
                 </h2>
                 <TextSectionPara>
-                  Developed NLP-powered chatbots using
-                  LangChain, increasing conversational accuracy by 20 percent.
-                  Additionally, I integrated Pinecone for vector search,
-                  enhancing retrieval speed by 40 percent for real-time queries.
+                  I built a LangChain chatbot and connected it to Pinecone for
+                  vector search. In testing, the changes improved conversational
+                  accuracy by 20% and retrieval speed by 40%.
                 </TextSectionPara>
                 <Technologies>
                   <TechnologiesList>Machine Learning</TechnologiesList>
@@ -212,14 +211,8 @@ const ArchiveProjects = () => {
                   Portfolio
                 </h2>
                 <TextSectionPara>
-                  {" "}
-                  Designed and implemented innovative strategies to showcase
-                  educational background, qualifications, professional
-                  experiences, and abilities through a digital portfolio
-                  Utilized ReactJS, HTML, and CSS skills to gather and organize
-                  portfolio information Crafted engaging and professional
-                  portfolio content to highlight key accomplishments and skills
-                  effectively
+                  This is the site you’re browsing. I built it with React to
+                  share my work, education, and experience in one place.
                 </TextSectionPara>
                 <Technologies>
                   <TechnologiesList>HTML || CSS</TechnologiesList>
@@ -248,12 +241,8 @@ const ArchiveProjects = () => {
                   Quiz App
                 </h2>
                 <TextSectionPara>
-                  {" "}
-                  This is the Intuitive Quiz Hub using React. After entering the
-                  details, one can enter into the quiz questions. Questions
-                  along with four options will be displayed on the screen, and
-                  then clicking on the option we can view our score. After
-                  finishing the quiz, total score will be displayed
+                  Pick an answer from four choices, keep going through the
+                  questions, and see your score at the end.
                 </TextSectionPara>
                 <Technologies>
                   <TechnologiesList>HTML</TechnologiesList>
@@ -281,14 +270,9 @@ const ArchiveProjects = () => {
                   Resume Templates
                 </h2>
                 <TextSectionPara>
-                  {" "}
-                  Resume templates are designed to enhance readability and
-                  overall presentation, ensuring the beat resume stands out.
-                  With 7-8 different templates available, one can easily switch
-                  between styles to find the one that best suits own needs.
-                  These templates are crafted to facilitate a smooth and
-                  efficient resume creation process, helping everyone to present
-                  the qualifications and experiences in the most compelling way.
+                  I made a collection of seven to eight templates so people can
+                  choose a layout that suits their experience and present their
+                  information clearly.
                 </TextSectionPara>
                 <Technologies>
                   <TechnologiesList>HTML || CSS</TechnologiesList>
@@ -318,16 +302,8 @@ const ArchiveProjects = () => {
                   To Do App
                 </h2>
                 <TextSectionPara>
-                  {" "}
-                  To-do apps enable efficient task management by allowing to
-                  track, prioritize, and focus on critical tasks, thereby
-                  boosting productivity and efficiency. Having all the tasks
-                  centralized in one place enhances organization and ensures no
-                  task is missed. Additionally, this to-do app is highly
-                  responsive, automatically adjusting to fit longer entries
-                  within the designated space. Users can effortlessly add or
-                  remove items from their list, streamlining the task management
-                  process.
+                  A responsive task list where you can add or remove items and
+                  keep longer tasks readable on screen.
                 </TextSectionPara>
                 <Technologies>
                   <TechnologiesList>HTML || CSS</TechnologiesList>

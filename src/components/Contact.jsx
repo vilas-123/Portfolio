@@ -63,23 +63,22 @@ const Contact = () => {
           <TextSection id="contact">
             <TextSectionHeading> Get in Touch</TextSectionHeading>
             <TextSectionPara>
-              Mail me at:{" "}
+              Email:{" "}
               <a
                 href="mailto:vilasharapanahalli317@gmail.com"
                 style={{ textDecoration: "none", color: "inherit" }}
               >
-                vilasharapanahalli317@gmail.com{" "}
+                vilasharapanahalli317@gmail.com
               </a>
             </TextSectionPara>
 
             <TextSectionPara>
-              {" "}
-              GitHub repositories:{" "}
+              GitHub:{" "}
               <a
                 href="https://github.com/vilas-123"
                 style={{ textDecoration: "none", color: "rgb(100, 255, 218)" }}
               >
-                https://github.com/vilas-123
+                github.com/vilas-123
               </a>
             </TextSectionPara>
             <TextSectionPara>
@@ -94,9 +93,8 @@ const Contact = () => {
               </a>
             </TextSectionPara>
             <TextSectionPara>
-              My inbox is always open. Whether you have a question or just want
-              to say hello, I'll try my best to get back to you! Feel free to
-              mail me about any relevant job updates.
+              Interested in working together, curious about a project, or just
+              want to say hello? I’d be happy to hear from you.
             </TextSectionPara>
 
             <SearchWrap>
@@ -109,8 +107,7 @@ const Contact = () => {
                     textDecoration: "none",
                   }}
                 >
-                  {" "}
-                  Hire Me!{" "}
+                  Let’s talk
                 </a>
               </SearchContainer>
             </SearchWrap>

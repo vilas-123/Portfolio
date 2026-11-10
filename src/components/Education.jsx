@@ -26,8 +26,8 @@ const Education = () => (
         MSc in Computer Science
       </h3>
       <p style={{ color: "aliceblue", fontSize: "1.7rem", marginTop: "0.5rem" }}>
-        University of Bern · Joint programme with the Universities of Neuchâtel
-        and Fribourg
+        University of Bern · Joint programme with the Universities of
+        Neuchâtel and Fribourg
       </p>
       <p
         style={{
@@ -46,9 +46,9 @@ const Education = () => (
           marginTop: "1rem",
         }}
       >
-        Current coursework includes Modeling and Scaling of AI, Big Data
-        Infrastructure, Fuzzy Sets, Software Product Lines, and User-Centered
-        Design.
+        This semester, I’m taking courses in Modeling and Scaling of AI, Big
+        Data Infrastructure, Fuzzy Sets, Software Product Lines, and
+        User-Centered Design.
       </p>
     </article>
     <article
@@ -81,9 +81,9 @@ const Education = () => (
           marginTop: "1rem",
         }}
       >
-        Completed a team capstone on a webcam-based virtual mouse using
-        Python, OpenCV, MediaPipe, and PyAutoGUI. The system supported gesture
-        control for cursor movement, clicks, scrolling, and volume/brightness.
+        For my team capstone, I built a virtual mouse that uses a webcam to
+        track hand gestures. It can move the cursor, click, scroll, and adjust
+        volume or brightness, all without extra hardware.
       </p>
     </article>
   </section>

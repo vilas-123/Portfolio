@@ -12,7 +12,7 @@ const Achievements = () => (
         marginBottom: "1.5rem",
       }}
     >
-      Awards & Achievements
+      Recognition
     </h2>
     <article
       style={{
@@ -23,7 +23,8 @@ const Achievements = () => (
       }}
     >
       <p style={{ color: "rgb(136, 146, 176)", fontSize: "1.7rem", lineHeight: "1.7" }}>
-        Earned a Gold Google badge for excellence in NLP and large language models.
+        Google Gold badge for work in natural language processing and large
+        language models.
       </p>
     </article>
     <article
@@ -35,7 +36,7 @@ const Achievements = () => (
       }}
     >
       <p style={{ color: "rgb(136, 146, 176)", fontSize: "1.7rem", lineHeight: "1.7" }}>
-        Earned Cisco CCNA Security certification in 2023.
+        Cisco CCNA Security certification, 2023.
       </p>
     </article>
     <article
@@ -47,8 +48,8 @@ const Achievements = () => (
       }}
     >
       <p style={{ color: "rgb(136, 146, 176)", fontSize: "1.7rem", lineHeight: "1.7" }}>
-        Received an Excellence Certificate in the Cognitive Applications (ML)
-        Workshop, surpassing 500 participants.
+        Excellence Certificate at the Cognitive Applications (ML) Workshop,
+        attended by more than 500 participants.
       </p>
     </article>
     <article
@@ -60,8 +61,8 @@ const Achievements = () => (
       }}
     >
       <p style={{ color: "rgb(136, 146, 176)", fontSize: "1.7rem", lineHeight: "1.7" }}>
-        Winner of the IEEE Project Symposium Prakalp 2024 (Credentials:
-        STB99412).
+        First place at the IEEE Project Symposium Prakalp, 2024
+        (credential STB99412).
       </p>
     </article>
     <article
@@ -72,7 +73,7 @@ const Achievements = () => (
       }}
     >
       <h3 style={{ color: "rgb(100, 255, 218)", fontSize: "2.1rem" }}>
-        3rd place — HackAppertus 2026
+        Third place at HackAppertus, 2026
       </h3>
       <p
         style={{
@@ -82,8 +83,8 @@ const Achievements = () => (
           marginTop: "1rem",
         }}
       >
-        Team award for Apertus-ParlTopics-8B, a LoRA-fine-tuned language model
-        for classifying Swiss parliamentary affairs by topic.
+        My team built Apertus-ParlTopics-8B, a LoRA-fine-tuned model that
+        classifies Swiss parliamentary affairs by topic.
       </p>
       <a
         href="https://lnkd.in/p/eDzvYBEk"
@@ -96,7 +97,7 @@ const Achievements = () => (
           marginTop: "1rem",
         }}
       >
-        Hackathon announcement
+        Read the announcement
       </a>
       <div
       style={{
@@ -108,7 +109,7 @@ const Achievements = () => (
       >
       <img
         src={require("../images/HackAppertus-Presentation.png")}
-        alt="Presenting the project with a teammate at HackAppertus"
+        alt="Presenting our project with a teammate at HackAppertus"
         loading="lazy"
         style={{
           width: "100%",
@@ -120,7 +121,7 @@ const Achievements = () => (
       />
       <img
         src={require("../images/HackAppertus-Team.png")}
-        alt="HackAppertus project team at the event"
+        alt="Our team at HackAppertus"
         loading="lazy"
         style={{
           width: "100%",

@@ -19,6 +19,13 @@ const Quote = styled.blockquote`
   line-height: 1.5;
   margin: 0 0 1.5rem;
   padding-left: 1.2rem;
+
+  cite {
+    display: block;
+    font-size: 1.4rem;
+    font-style: normal;
+    margin-top: 0.3rem;
+  }
 `;
 
 const Opening = styled.p`
@@ -78,16 +85,18 @@ const Home = () => (
     <Name>Vilas Harapanahalli</Name>
     <Role>AI/ML Engineer building language-model systems.</Role>
     <Quote>
-      “The important thing is not to stop questioning.” <span>— Albert Einstein</span>
+      “The important thing is not to stop questioning.”
+      <cite>Albert Einstein</cite>
     </Quote>
     <Opening>
-      Curiosity drives me to look beneath the model—and turn what I learn into
-      practical, reliable AI.
+      I like understanding how language models work and finding ways to make
+      them more useful and trustworthy.
     </Opening>
     <Summary>
-      Nearly three years building LLM-powered products and cloud-native
-      backends at E42.ai and BeeHyv. Now pursuing an MSc at the University of
-      Bern, focused on efficient and trustworthy language models.
+      For almost three years, I built LLM-powered products and cloud backends
+      at E42.ai and BeeHyv. I’m now studying Computer Science at the University
+      of Bern, where I’m exploring how to make language models more efficient
+      and dependable.
     </Summary>
     <LinkButton href="mailto:vilasharapanahalli317@gmail.com">Get in touch</LinkButton>
     <LinkButton

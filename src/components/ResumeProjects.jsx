@@ -64,7 +64,7 @@ const Projects = () => (
         marginBottom: "1.5rem",
       }}
     >
-      Academic & Research Projects
+      Projects from My Studies
     </h2>
     <div style={{ margin: "1.5rem 0 1rem" }}>
       <h3 style={{ color: "aliceblue", fontSize: "2.3rem" }}>
@@ -82,28 +82,29 @@ const Projects = () => (
       </p>
     </div>
     <Card>
-      <Title>CiteRight — Efficient, grounded language models</Title>
+      <Title>CiteRight: Language models that cite their sources</Title>
       <Description>
-        University team project training small open language models to cite
-        sources and abstain when uncertain. I worked on 4-bit quantization,
-        vLLM serving, and latency and memory benchmarking. The approach
-        combines LoRA supervised fine-tuning, DPO, and verifier-guided decoding.
+        My team is teaching smaller open language models to cite their sources
+        and say when they don’t know. I’m working on 4-bit quantization, vLLM
+        serving, and measuring latency and memory. The project combines LoRA
+        fine-tuning, DPO, and verifier-guided decoding.
       </Description>
       <Tags>LoRA · DPO · Quantization · vLLM · Model evaluation</Tags>
     </Card>
     <Card>
-      <Title>Famigo — Family task-and-reward app</Title>
+      <Title>Famigo: A family task-and-reward app</Title>
       <Description>
-        User-centered design team project for a family app that helps children
-        build confidence and responsibility through shared tasks and rewards.
+        For a user-centered design project, my team is creating an app where
+        families can share tasks and rewards to help children build confidence
+        and responsibility.
       </Description>
       <Tags>User-centered design · Product design</Tags>
     </Card>
     <Card>
-      <Title>Fuzzy-logic robot for delicate objects</Title>
+      <Title>A robot that can handle delicate objects</Title>
       <Description>
-        Fuzzy Sets team project exploring a robot that can handle slippery and
-        fragile objects.
+        In our Fuzzy Sets project, we’re exploring how a robot could safely
+        pick up objects that are slippery or fragile.
       </Description>
       <Tags>Fuzzy logic · Robotics</Tags>
     </Card>
@@ -122,13 +123,12 @@ const Projects = () => (
       </p>
     </div>
     <Card>
-      <Title>Virtual Mouse Using Hand Gestures</Title>
+      <Title>Virtual mouse controlled by hand gestures</Title>
       <Description>
-        Bachelor&apos;s thesis: a real-time webcam hand-tracking system for
-        controlling the cursor, clicking, scrolling, and adjusting volume and
-        brightness without additional hardware. Published in the International
-        Journal of Advanced Research in Computer and Communication Engineering
-        (IJARCCE), Volume 13, Issue 4, April 2024.
+        For my bachelor’s thesis, my team built a virtual mouse that tracks
+        hand gestures through a webcam. It can move the cursor, click, scroll,
+        and adjust volume and brightness without any extra hardware. Our paper
+        was published in IJARCCE, Volume 13, Issue 4, in April 2024.
       </Description>
       <Tags>Python · OpenCV · MediaPipe · PyAutoGUI</Tags>
       <div>
@@ -139,28 +139,28 @@ const Projects = () => (
             marginTop: "1.8rem",
           }}
         >
-          Thesis & degree documents
+          Thesis and degree documents
         </h4>
         <DocumentLink
           href="/documents/virtual-mouse-publication-certificate.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
-          View publication certificate
+          Open publication certificate
         </DocumentLink>
         <DocumentLink
           href="/documents/btech-transcript.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
-          View VTU transcript
+          Open VTU transcript
         </DocumentLink>
         <DocumentLink
           href="/documents/degree-completion-certificate.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
-          View degree completion certificate
+          Open degree completion certificate
         </DocumentLink>
         <h4
           style={{
@@ -169,21 +169,21 @@ const Projects = () => (
             marginTop: "1.8rem",
           }}
         >
-          Professional letters of recommendation
+          Letters of recommendation
         </h4>
         <DocumentLink
           href="/documents/professional-recommendation-1.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
-          View recommendation letter 1
+          Open recommendation letter 1
         </DocumentLink>
         <DocumentLink
           href="/documents/professional-recommendation-2.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >
-          View recommendation letter 2
+          Open recommendation letter 2
         </DocumentLink>
       </div>
     </Card>
@@ -198,17 +198,17 @@ const Projects = () => (
           marginTop: "0.4rem",
         }}
       >
-        HackAppertus 2026 · 3rd place
+        HackAppertus 2026 · Third place
       </p>
     </div>
     <Card>
-      <Title>Apertus-ParlTopics-8B</Title>
+      <Title>Apertus-ParlTopics-8B: Swiss parliamentary topics</Title>
       <Description>
-        Team project that earned 3rd place at HackAppertus in October 2026. We
-        LoRA fine-tuned Apertus 8B to assign Swiss parliamentary affairs to
-        topics in one forward pass, matching a closed frontier model across
-        three labelling schemes. The model was used to label 318,801 affairs
-        in OpenParlData.
+        At HackAppertus in October 2026, my team took third place with this
+        project. We fine-tuned Apertus 8B with LoRA to label Swiss parliamentary
+        affairs by topic in a single pass. It matched a closed frontier model
+        across three labelling schemes and was used to label 318,801 affairs in
+        OpenParlData.
       </Description>
       <Tags>Apertus · LoRA · Swiss Parliament · OpenParlData</Tags>
       <ProjectLink
@@ -216,7 +216,7 @@ const Projects = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        Source code
+        Explore the code
       </ProjectLink>
       <ProjectLink
         href="https://huggingface.co/merabro/Apertus-ParlTopics-8B"
@@ -230,7 +230,7 @@ const Projects = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        Project slides
+        See the slides
       </ProjectLink>
     </Card>
   </Section>
